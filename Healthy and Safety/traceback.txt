@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/chapter2.rpy", line 586, in script
+    jump day2
+ScriptError: could not find label 'day2'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/chapter2.rpy", line 586, in script
+    jump day2
+  File "renpy/ast.py", line 1757, in execute
+    rv = renpy.game.script.lookup(target)
+  File "renpy/script.py", line 918, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'day2'.
+
+Windows-10-10.0.22000
+Ren'Py 7.4.10.2178
+Healthy and Safety 1.0
+Tue Jun 28 21:37:10 2022
