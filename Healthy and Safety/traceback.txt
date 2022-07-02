@@ -1,22 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/chapter2.rpy", line 586, in script
-    jump day2
-ScriptError: could not find label 'day2'.
+  File "game/CreateCharactar.rpy", line 10, in script
+    image player f= Composite(
+  File "game/CreateCharactar.rpy", line 10, in script
+    image player f= Composite(
+  File "game/CreateCharactar.rpy", line 15, in <module>
+    (600, -220), "Create 2/Accessories/acc[acc].png",
+ValueError: need more than 1 value to unpack
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/chapter2.rpy", line 586, in script
-    jump day2
-  File "renpy/ast.py", line 1757, in execute
-    rv = renpy.game.script.lookup(target)
-  File "renpy/script.py", line 918, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'day2'.
+  File "renpy/bootstrap.py", line 331, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 550, in main
+    renpy.game.context().run(node)
+  File "game/CreateCharactar.rpy", line 10, in script
+    image player f= Composite(
+  File "game/CreateCharactar.rpy", line 10, in script
+    image player f= Composite(
+  File "renpy/ast.py", line 1027, in execute
+    img = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "renpy/python.py", line 2269, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/CreateCharactar.rpy", line 15, in <module>
+    (600, -220), "Create 2/Accessories/acc[acc].png",
+  File "renpy/display/layout.py", line 325, in Composite
+    width, height = size
+ValueError: need more than 1 value to unpack
 
 Windows-10-10.0.22000
 Ren'Py 7.4.10.2178
 Healthy and Safety 1.0
-Tue Jun 28 21:37:10 2022
+Thu Jun 30 12:37:14 2022

@@ -4,8 +4,10 @@ init:
     default hair_color = "Dark"
     default costume = 1
     default acc = 1
+    
 
-image player_f  = Composite(
+
+image player f= Composite(
     (300, 600),
     (600, -208), "Create 2/Hair/Style[hairstyle]_[hair_color].png",
     (1313, 350), "Create 2/Expressions/Expression[expression].png",
@@ -37,6 +39,9 @@ image player_f  = Composite(
 
 
 screen create_female():
+
+    $gender=2
+
     modal True
 
     imagemap:
@@ -83,16 +88,16 @@ screen create_female():
         ##Continue##
         hotspot(1600,30, 350, 180) action Return()
 
-    add "player_f":
+    add "player f":
         pos(600, 80)
         zoom 0.5
 
-image player_m  = Composite(
-    (300, 600),
-    (-90, -208), "Create 1/Hair/Style[hairstyle]_[hair_color].png",
-    (303, 222), "Create 1/Expressions/Expression[expression].png",
-    (-17, 497), "Create 1/Costume/cos[costume].png",
-    (-115, -260), "Create 1/Accessories/acc[acc].png",
+image player m= Composite(
+        (300, 600),
+        (-90, -208), "Create 1/Hair/Style[hairstyle]_[hair_color].png",
+        (303, 222), "Create 1/Expressions/Expression[expression].png",
+        (-17, 497), "Create 1/Costume/cos[costume].png",
+        (-115, -260), "Create 1/Accessories/acc[acc].png",
 
 )
 
@@ -144,6 +149,6 @@ screen create_male():
         ##Continue##
         hotspot(1600,30, 350, 180) action Return()
 
-    add "player_m":
+    add "player m":
         pos(1400, 400)
         zoom 0.5
