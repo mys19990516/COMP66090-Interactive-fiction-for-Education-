@@ -16,3 +16,5 @@ File "game/chapter2.rpy", line 568: end of line expected.
 
 Ren'Py Version: Ren'Py 7.4.10.2178
 Tue Jun 28 21:17:10 2022
+sdsdsa
+
