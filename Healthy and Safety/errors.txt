@@ -2,19 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/chapter2.rpy", line 478: choice menuitem expects a non-empty block.
-    "Place the wire against the wall":
-                                      ^
-
-File "game/chapter2.rpy", line 510: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Through the nose, skin and eyes"
-                                     ^
-
-File "game/chapter2.rpy", line 568: end of line expected.
-    Mys "I seem to need to sort out my clothes after entering or exiting. "But
-                                                                           ^
+File "game/CreateCharactar.rpy", line 95: invalid syntax
+        attribute m default:\
+                   ^
+    
 
 Ren'Py Version: Ren'Py 7.4.10.2178
-Tue Jun 28 21:17:10 2022
-sdsdsa
-
+Thu Jun 30 12:27:34 2022
