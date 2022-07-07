@@ -15,6 +15,7 @@ init python:
 
         return score1
 
+
 label chapter3:
 
     scene white
@@ -29,602 +30,608 @@ label chapter3:
     scene bg classroom
     with dissolve
 
-    # show Missy Normal at center:
-    #     xalign 0.7
-    #
-    # Missy "Hello everyone, I hope all of you had a great holiday."
-    # Missy "Most people should have been restricted from travelling due to the covid-19."
-    # Missy "However, with the improvement of the epidemic,"
-    # Missy "travel restrictions have all been canceled for the new term!"
-    # Missy "In the new semester, to make up for not travelling in the summer vacation."
-    # Missy "The university offers an exchange programme for our majors."
-    # Missy "All students are welcome!"
-    # Missy "You will go to universities around the world for 3 months of study."
-    # Missy "All students are welcome to sign up!"
-    #
-    # hide Missy
-    #
-    # $showplayer()
-    #
-    # show kevin:
-    #     zoom 0.5
-    #     xalign 1.0 yalign 0.35
-    #     linear 0.5 xalign 0.7
-    #
-    # Kevin "Do you want to participate?"
-    # Mys "I would love to participate!"
-    # Mys "It was always my dream to go to Von Neumann University (the best computer university in the world)."
-    # Kevin "Then let's go!"
-    #
-    # hide kevin
-    # $hideplayer()
-    #
-    # Missy "I've already heard from some students said they really want to go."
-    # Missy "But before you sign up, I would like to remind you about the safety about the placement."
-    #
-    # $showplayer()
-    #
-    # Mys "I have a question, what is a placement?"
-    # Missy "Placement involves transferring your supervision to a third party placement provider who is usually said to be another organisation."
-    # Missy "It is clear that exchange learning is a placement."
-    # Missy "Many of the school's activities are part of the placement."
-    # Missy "If the activity is a placement, you must apply to the school and wait for its approval."
-    # Mys "If the school doesn't approve me to attend, "
-    # Mys "or if I don't submit an application, can I still attend?"
-    # Missy "Then you can't take part, so please remember to always submit an application! "
-    # Missy "So you need to be able to discern what activities are placements."
-    #
-    # Missy "The safety of our students is always our primary concern, even when your supervision is diverted."
-    # Mys "What do I need to be aware of regarding the safety of placement?"
-    #
-    # $hideplayer()
-    #
-    # Missy "There are three main stages of security in resettlement: before, during and after resettlement."
-    # Missy "The main thing that schools may ask you to provide after placement is reports on standard templates or electronic questionnaires."
-    # Missy "Or the school may ask you to share your experiences for the following year's students."
-    # Missy "The focus of placement safety is pre and post placement."
-    #
-    # Missy "Before placing, you first need to consider the practicality of the placement."
-    # Missy "Practicality means do you need a visa or other travel document? "
-    # Missy "Is your passport valid? "
-    # Missy "Can you arrange appropriate health and travel insurance?"
-    # Missy "How will you travel around during your placement and where will you stay? "
-    # Missy "Will you have enough money to cover the costs of your placement,"
-    # Missy "and will you be able to access additional funds in case of an emergency? "
-    # Missy "Considering all of these will help ensure that everything you need is in place before you leave our university."
-    #
-    # Missy "You then need to consider the risks in 6 ways. "
-    # Missy "Your work, your travel and transport, your location or area, your general and environmental health."
-    # Missy "Your personal traits, characteristics, abilities and your insurance arrangements."
-    #
-    # "Your work"
-    # Missy "First you need to consider the risks at your job. "
-    # Missy "They include the nature of the work hazards you may be exposed to, "
-    # Missy "such as sharp objects, tools, hazardous chemicals or potentially dangerous people or animals."
-    #
-    # "Your travel and transport"
-    # Missy "Depending on the nature and location of the placement, "
-    # Missy "you may also face significant health, safety and welfare issues associated with travelling to and from the placement and to and from your accommodation."
-    # Missy "You should consider the hazards and benefits of different types of public transport, self-driving, walking or cycling."
-    #
-    # "Your location or region"
-    # Missy "The location of the placement can have a considerable impact, "
-    # Missy "especially if it is located in an area or country/region that you are unfamiliar with."
-    # Missy "You should also be aware of the local culture. "
-    # Missy "For example, to understand which standards of dress and behaviour are acceptable and which may cause offence."
-    #
-    # "Your general and environmental health"
-    # Missy "You may face significant health, safety and welfare issues related to the environmental conditions in your workplace or general location, your accommodation or your food and drink."
-    # Missy "Consider the prevailing climate, look for reviews about where you will be staying."
-    # Missy " and try to find advice on where to eat and where to avoid."
-    #
-    # "Your personal traits, characteristics, abilities"
-    # Missy "Your personal health, knowledge, skills, experience and personality may have an impact on your health and safety in a particular environment."
-    #
-    # "Your insurance arrangements"
-    # Missy "You may need to obtain travel and medical insurance prior to before going on placement."
-    # Missy "Make sure you consider and understand the scope and limitations of your insurance to ensure you are fully covered."
-    #
-    # Missy "In placement, -you should be in regular contact with your workplace supervisor."
-    # Missy "Communicate with your school on a regular basis."
-    # Missy "You should also establish emergency contact arrangements."
+    show Missy Normal at center:
+        xalign 0.8
 
-    #
-    # Missy "Before you submit your application, we need to know if you can correctly identify these 6 factors."
-    # Missy "You will only be able to make a more comprehensive plan if you can make the right judgement."
-    #
-    # Missy "Please choose carefully, if you do not pass the test, you will not be able to participate in the exchange programme."
-    # Missy "I will give a few scenarios below."
-    # Missy "Please decide which factor they belong to and whether they are appropriate or not."
+    Missy "Hello everyone, I hope all of you had a great holiday."
+    Missy "Most people should have been restricted from travelling due to the covid-19."
+    Missy "However, with the improvement of the epidemic,"
+    Missy "travel restrictions have all been canceled for the new term!"
+    Missy "In the new semester, to make up for not travelling in the summer vacation."
+    Missy "The university offers an exchange programme for our majors."
+    Missy "All students are welcome!"
+    Missy "You will go to universities around the world for 3 months of study."
+    Missy "All students are welcome to sign up!"
 
-# label exam:
-#     scene bg exam
-#     with fade
-#
-#     $timeout_label = True
-#     $showscore=True
-# label q1:
-#
-#     $ timeout_label = "q2"
-#
-#     if isshake:
-#         with hpunch
-#         $isshake=False
-#     menu:
-#         Missy "The school has arranged for you to carry out relevant experiments in the laboratory of a chemical company."
-#
-#         "Incorrect":
-#
-#             Missy "Your are right. Because we are computer science students, it is very dangerous to do chemistry experiments without training."
-#
-#             $scoring1(8.34)
-#
-#             Missy "Which aspect does this belong to?"
-#
-#             menu:
-#
-#                 "Your work":
-#
-#                     $scoring1(8.34)
-#
-#                 "Your travel and transport":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-#                 "Your location or region":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-#                 "Your general and environmental health":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-#                 "Your personal traits, characteristics, abilities":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-#                 "Your insurance arrangements":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-#         "Correct":
-#             with hpunch
-#
-#             Missy "Your are wrong. Because we are computer science students, it is very dangerous to do chemistry experiments without training."
-#
-#             menu:
-#                 "Your work":
-#
-#                     $scoring1(8.34)
-#
-#                 "Your travel and transport":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-#                 "Your location or region":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-#                 "Your general and environmental health":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-#                 "Your personal traits, characteristics, abilities":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-#                 "Your insurance arrangements":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-# label q2:
-#
-#     if isshake:
-#         with hpunch
-#         $isshake=False
-#
-#     $ timeout_label = "q3"
-#     menu:
-#
-#
-#         Missy "Every time you have to pass an intersection with no traffic lights and a lot of vehicles from your hostel to placement. You can only choose to walk or cycle to the placement."
-#
-#         "Incorrect":
-#
-#             Missy "Your are right. Intersections without traffic lights are very dangerous and there is a high risk of traffic accidents."
-#
-#             $scoring1(8.34)
-#
-#             menu:
-#                 "Your work":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your travel and transport":
-#                     $scoring1(8.34)
-#
-#
-#                 "Your location or region":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-#                 "Your general and environmental health":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-#                 "Your personal traits, characteristics, abilities":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-#                 "Your insurance arrangements":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-#         "Correct":
-#             with hpunch
-#
-#             Missy "Your are wrong. Intersections without traffic lights are very dangerous and there is a high risk of traffic accidents."
-#
-#             menu:
-#                 "Your work":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-#                 "Your travel and transport":
-#
-#                     $scoring1(8.34)
-#
-#
-#                 "Your location or region":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-#                 "Your general and environmental health":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-#                 "Your personal traits, characteristics, abilities":
-#                     with hpunch
-#
-#                     $scoring1(0)
-#
-#                 "Your insurance arrangements":
-#                     with hpunch
-#
-#                     $scoring1(0)
-# label q3:
-#
-#     if isshake:
-#         with hpunch
-#         $isshake=False
-#
-#     $ timeout_label = "q4"
-#     menu:
-#
-#         Missy "The country you are visiting is more resistant to black clothing, so you should leave your black clothes at home."
-#
-#         "Incorrect":
-#             with hpunch
-#
-#             Missy "Your are wrong. Knowing the culture of the country in advance is the right thing to do."
-#
-#             menu:
-#                 "Your work":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#
-#                 "Your travel and transport":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your location or region":
-#                     $scoring1(8.34)
-#
-#                 "Your general and environmental health":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your personal traits, characteristics, abilities":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your insurance arrangements":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#         "Correct":
-#             $scoring1(8.34)
-#
-#             Missy "Your are right. Knowing the culture of the country in advance is the right thing to do."
-#
-#             menu:
-#                 "Your work":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your travel and transport":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your location or region":
-#                     $scoring1(8.34)
-#
-#                 "Your general and environmental health":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your personal traits, characteristics, abilities":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your insurance arrangements":
-#                     with hpunch
-#                     $scoring1(0)
-#
-# label q4:
-#
-#     if isshake:
-#         with hpunch
-#         $isshake=False
-#
-#     $ timeout_label = "q5"
-#     menu:
-#         Missy "Before you go, you should search for information about the local area. Find out about the local climate food habits, etc."
-#
-#         "Incorrect":
-#             with hpunch
-#
-#             Missy "Your are wrong. You should get to know the local conditions and daily life before you go."
-#
-#             menu:
-#                 "Your work":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your travel and transport":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your location or region":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your general and environmental health":
-#                     $scoring1(8.34)
-#
-#                 "Your personal traits, characteristics, abilities":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your insurance arrangements":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#         "Correct":
-#             $scoring1(8.34)
-#
-#             Missy "Your are right. You should get to know the local conditions and daily life before you go."
-#
-#             menu:
-#                 "Your work":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your travel and transport":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your location or region":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your general and environmental health":
-#                     $scoring1(8.34)
-#
-#                 "Your personal traits, characteristics, abilities":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your insurance arrangements":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#
-# label q5:
-#
-#     if isshake:
-#         with hpunch
-#         $isshake=False
-#
-#     $ timeout_label = "q6"
-#     menu:
-#         Missy "Make yourself more independent and stronger before you go."
-#
-#         "Incorrect":
-#
-#             Missy "Your are wrong. Our personalities always have a huge impact."
-#             with hpunch
-#
-#             menu:
-#                 "Your work":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your travel and transport":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your location or region":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your general and environmental health":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your personal traits, characteristics, abilities":
-#                     $scoring1(8.34)
-#
-#                 "Your insurance arrangements":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#         "Correct":
-#             $scoring1(8.34)
-#
-#             Missy "Your are right. Our personalities always have a huge impact."
-#
-#             menu:
-#                 "Your work":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your travel and transport":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your location or region":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your general and environmental health":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your personal traits, characteristics, abilities":
-#                     $scoring1(8.34)
-#
-#                 "Your insurance arrangements":
-#                     with hpunch
-#                     $scoring1(0)
-# label q6:
-#
-#     if isshake:
-#         with hpunch
-#         $isshake=False
-#
-#     $ timeout_label = "result"
-#     menu:
-#         Missy "We are very strong and therefore do not need to care about insurance."
-#
-#         "Incorrect":
-#
-#             Missy "Your are right."
-#             Missy "We are very strong and therefore do not need to care about insurance."
-#
-#             $scoring1(8.34)
-#
-#             menu:
-#                 "Your work":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your travel and transport":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your location or region":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your general and environmental health":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your personal traits, characteristics, abilities":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your insurance arrangements":
-#                     $scoring1(8.34)
-#
-#         "Correct":
-#             with hpunch
-#
-#             Missy "Your are wrong. Intersections without traffic lights are very dangerous and there is a high risk of traffic accidents."
-#
-#             menu:
-#                 "Your work":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your travel and transport":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your location or region":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your general and environmental health":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your personal traits, characteristics, abilities":
-#                     with hpunch
-#                     $scoring1(0)
-#
-#                 "Your insurance arrangements":
-#                     $scoring1(8.34)
-#
-#
-# label result:
-#
-#     if isshake:
-#         with hpunch
-#         $isshake=False
-#
-#     $timeout_label = False
-#
-#
-#     show Missy Normal at center:
-#         xalign 0.7
-#     Missy "OK, now let's see the results of your test."
-#
-#     if score1>=83.4:
-#
-#         Missy "Your score is [score1]. Congratulations on passing the test."
-#
-#         Missy "You can contact me to apply for the exchange student program."
-#
-#         $showscore=False
-#         $timeout_label = None
-#     else:
-#
-#         Missy "Your score is [score1]. It's too bad you didn't pass the test. "
-#
-#         Missy "You need a minimum score of 80 to pass the exam. "
-#
-#         Missy "Not passing the test means not being able to take part in the interaction programme."
-#
-#         Missy "If you don't pass, you can take the test again."
-#
-#         $showscore=False
-#         $timeout_label = None
-#
-#         jump exam
-#
-#
-#     "Kevin also passed the test"
-#     "You ended up at the Von Neumann University (the best computer university) to study computing as interactive students."
+    hide Missy
+
+    $showplayer()
+
+    show kevin:
+        zoom 0.5
+        xalign 1.0 yalign 0.35
+        linear 0.5 xalign 0.7
+
+    Kevin "Do you want to participate?"
+    Mys "I would love to participate!"
+    Mys "It was always my dream to go to Von Neumann University (the best computer university in the world)."
+    Kevin "Then let's go!"
+
+    hide kevin
+    $hideplayer()
+
+    show Missy Normal at center:
+        xalign 0.8
+
+    Missy "I've already heard from some students said they really want to go."
+    Missy "But before you sign up, I would like to remind you about the safety about the placement."
+
+    $showplayer()
+
+
+    Mys "I have a question, what is a placement?"
+    Missy "Placement involves transferring your supervision to a third party placement provider who is usually said to be another organisation."
+    Missy "It is clear that exchange learning is a placement."
+    Missy "Many of the school's activities are part of the placement."
+    Missy "If the activity is a placement, you must apply to the school and wait for its approval."
+    Mys "If the school doesn't approve me to attend, "
+    Mys "or if I don't submit an application, can I still attend?"
+    Missy "Then you can't take part, so please remember to always submit an application! "
+    Missy "So you need to be able to discern what activities are placements."
+
+    Missy "The safety of our students is always our primary concern, even when your supervision is diverted."
+    Mys "What do I need to be aware of regarding the safety of placement?"
+
+    $hideplayer()
+
+    Missy "There are three main stages of security in resettlement: before, during and after resettlement."
+    Missy "The main thing that schools may ask you to provide after placement is reports on standard templates or electronic questionnaires."
+    Missy "Or the school may ask you to share your experiences for the following year's students."
+    Missy "The focus of placement safety is pre and post placement."
+
+    Missy "Before placing, you first need to consider the practicality of the placement."
+    Missy "Practicality means do you need a visa or other travel document? "
+    Missy "Is your passport valid? "
+    Missy "Can you arrange appropriate health and travel insurance?"
+    Missy "How will you travel around during your placement and where will you stay? "
+    Missy "Will you have enough money to cover the costs of your placement,"
+    Missy "and will you be able to access additional funds in case of an emergency? "
+    Missy "Considering all of these will help ensure that everything you need is in place before you leave our university."
+
+    Missy "You then need to consider the risks in 6 ways. "
+    Missy "Your work, your travel and transport, your location or area, your general and environmental health."
+    Missy "Your personal traits, characteristics, abilities and your insurance arrangements."
+
+    "Your work"
+    Missy "First you need to consider the risks at your job. "
+    Missy "They include the nature of the work hazards you may be exposed to, "
+    Missy "such as sharp objects, tools, hazardous chemicals or potentially dangerous people or animals."
+
+    "Your travel and transport"
+    Missy "Depending on the nature and location of the placement, "
+    Missy "you may also face significant health, safety and welfare issues associated with travelling to and from the placement and to and from your accommodation."
+    Missy "You should consider the hazards and benefits of different types of public transport, self-driving, walking or cycling."
+
+    "Your location or region"
+    Missy "The location of the placement can have a considerable impact, "
+    Missy "especially if it is located in an area or country/region that you are unfamiliar with."
+    Missy "You should also be aware of the local culture. "
+    Missy "For example, to understand which standards of dress and behaviour are acceptable and which may cause offence."
+
+    "Your general and environmental health"
+    Missy "You may face significant health, safety and welfare issues related to the environmental conditions in your workplace or general location, your accommodation or your food and drink."
+    Missy "Consider the prevailing climate, look for reviews about where you will be staying."
+    Missy " and try to find advice on where to eat and where to avoid."
+
+    "Your personal traits, characteristics, abilities"
+    Missy "Your personal health, knowledge, skills, experience and personality may have an impact on your health and safety in a particular environment."
+
+    "Your insurance arrangements"
+    Missy "You may need to obtain travel and medical insurance prior to before going on placement."
+    Missy "Make sure you consider and understand the scope and limitations of your insurance to ensure you are fully covered."
+
+    Missy "In placement, -you should be in regular contact with your workplace supervisor."
+    Missy "Communicate with your school on a regular basis."
+    Missy "You should also establish emergency contact arrangements."
+
+
+    Missy "Before you submit your application, we need to know if you can correctly identify these 6 factors."
+    Missy "You will only be able to make a more comprehensive plan if you can make the right judgement."
+
+    Missy "Please choose carefully, if you do not pass the test, you will not be able to participate in the exchange programme."
+    Missy "I will give a few scenarios below."
+    Missy "Please decide which factor they belong to and whether they are appropriate or not."
+
+label exam:
+    scene bg exam
+    with fade
+
+    $timeout_label = True
+    $showscore=True
+label q1:
+
+    $score1=0
+
+    $ timeout_label = "q2"
+
+    if isshake:
+        with hpunch
+        $isshake=False
+    menu:
+        Missy "The school has arranged for you to carry out relevant experiments in the laboratory of a chemical company."
+
+        "Incorrect":
+
+            Missy "Your are right. Because we are computer science students, it is very dangerous to do chemistry experiments without training."
+
+            $scoring1(8.34)
+
+            Missy "Which aspect does this belong to?"
+
+            menu:
+
+                "Your work":
+
+                    $scoring1(8.34)
+
+                "Your travel and transport":
+                    with hpunch
+
+                    $scoring1(0)
+
+                "Your location or region":
+                    with hpunch
+
+                    $scoring1(0)
+
+                "Your general and environmental health":
+                    with hpunch
+
+                    $scoring1(0)
+
+                "Your personal traits, characteristics, abilities":
+                    with hpunch
+
+                    $scoring1(0)
+
+                "Your insurance arrangements":
+                    with hpunch
+
+                    $scoring1(0)
+
+        "Correct":
+            with hpunch
+
+            Missy "Your are wrong. Because we are computer science students, it is very dangerous to do chemistry experiments without training."
+
+            menu:
+                "Your work":
+
+                    $scoring1(8.34)
+
+                "Your travel and transport":
+                    with hpunch
+
+                    $scoring1(0)
+
+                "Your location or region":
+                    with hpunch
+
+                    $scoring1(0)
+
+                "Your general and environmental health":
+                    with hpunch
+
+                    $scoring1(0)
+
+                "Your personal traits, characteristics, abilities":
+                    with hpunch
+
+                    $scoring1(0)
+
+                "Your insurance arrangements":
+                    with hpunch
+
+                    $scoring1(0)
+
+label q2:
+
+    if isshake:
+        with hpunch
+        $isshake=False
+
+    $ timeout_label = "q3"
+    menu:
+
+
+        Missy "Every time you have to pass an intersection with no traffic lights and a lot of vehicles from your hostel to placement. You can only choose to walk or cycle to the placement."
+
+        "Incorrect":
+
+            Missy "Your are right. Intersections without traffic lights are very dangerous and there is a high risk of traffic accidents."
+
+            $scoring1(8.34)
+
+            menu:
+                "Your work":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your travel and transport":
+                    $scoring1(8.34)
+
+
+                "Your location or region":
+                    with hpunch
+
+                    $scoring1(0)
+
+                "Your general and environmental health":
+                    with hpunch
+
+                    $scoring1(0)
+
+                "Your personal traits, characteristics, abilities":
+                    with hpunch
+
+                    $scoring1(0)
+
+                "Your insurance arrangements":
+                    with hpunch
+
+                    $scoring1(0)
+
+        "Correct":
+            with hpunch
+
+            Missy "Your are wrong. Intersections without traffic lights are very dangerous and there is a high risk of traffic accidents."
+
+            menu:
+                "Your work":
+                    with hpunch
+
+                    $scoring1(0)
+
+                "Your travel and transport":
+
+                    $scoring1(8.34)
+
+
+                "Your location or region":
+                    with hpunch
+
+                    $scoring1(0)
+
+                "Your general and environmental health":
+                    with hpunch
+
+                    $scoring1(0)
+
+                "Your personal traits, characteristics, abilities":
+                    with hpunch
+
+                    $scoring1(0)
+
+                "Your insurance arrangements":
+                    with hpunch
+
+                    $scoring1(0)
+label q3:
+
+    if isshake:
+        with hpunch
+        $isshake=False
+
+    $ timeout_label = "q4"
+    menu:
+
+        Missy "The country you are visiting is more resistant to black clothing, so you should leave your black clothes at home."
+
+        "Incorrect":
+            with hpunch
+
+            Missy "Your are wrong. Knowing the culture of the country in advance is the right thing to do."
+
+            menu:
+                "Your work":
+                    with hpunch
+                    $scoring1(0)
+
+
+                "Your travel and transport":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your location or region":
+                    $scoring1(8.34)
+
+                "Your general and environmental health":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your personal traits, characteristics, abilities":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your insurance arrangements":
+                    with hpunch
+                    $scoring1(0)
+
+        "Correct":
+            $scoring1(8.34)
+
+            Missy "Your are right. Knowing the culture of the country in advance is the right thing to do."
+
+            menu:
+                "Your work":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your travel and transport":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your location or region":
+                    $scoring1(8.34)
+
+                "Your general and environmental health":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your personal traits, characteristics, abilities":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your insurance arrangements":
+                    with hpunch
+                    $scoring1(0)
+
+label q4:
+
+    if isshake:
+        with hpunch
+        $isshake=False
+
+    $ timeout_label = "q5"
+    menu:
+        Missy "Before you go, you should search for information about the local area. Find out about the local climate food habits, etc."
+
+        "Incorrect":
+            with hpunch
+
+            Missy "Your are wrong. You should get to know the local conditions and daily life before you go."
+
+            menu:
+                "Your work":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your travel and transport":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your location or region":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your general and environmental health":
+                    $scoring1(8.34)
+
+                "Your personal traits, characteristics, abilities":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your insurance arrangements":
+                    with hpunch
+                    $scoring1(0)
+
+        "Correct":
+            $scoring1(8.34)
+
+            Missy "Your are right. You should get to know the local conditions and daily life before you go."
+
+            menu:
+                "Your work":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your travel and transport":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your location or region":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your general and environmental health":
+                    $scoring1(8.34)
+
+                "Your personal traits, characteristics, abilities":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your insurance arrangements":
+                    with hpunch
+                    $scoring1(0)
+
+
+label q5:
+
+    if isshake:
+        with hpunch
+        $isshake=False
+
+    $ timeout_label = "q6"
+    menu:
+        Missy "Make yourself more independent and stronger before you go."
+
+        "Incorrect":
+
+            Missy "Your are wrong. Our personalities always have a huge impact."
+            with hpunch
+
+            menu:
+                "Your work":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your travel and transport":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your location or region":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your general and environmental health":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your personal traits, characteristics, abilities":
+                    $scoring1(8.34)
+
+                "Your insurance arrangements":
+                    with hpunch
+                    $scoring1(0)
+
+        "Correct":
+            $scoring1(8.34)
+
+            Missy "Your are right. Our personalities always have a huge impact."
+
+            menu:
+                "Your work":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your travel and transport":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your location or region":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your general and environmental health":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your personal traits, characteristics, abilities":
+                    $scoring1(8.34)
+
+                "Your insurance arrangements":
+                    with hpunch
+                    $scoring1(0)
+label q6:
+
+    if isshake:
+        with hpunch
+        $isshake=False
+
+    $ timeout_label = "result"
+    menu:
+        Missy "We are very strong and therefore do not need to care about insurance."
+
+        "Incorrect":
+
+            Missy "Your are right."
+            Missy "We are very strong and therefore do not need to care about insurance."
+
+            $scoring1(8.34)
+
+            menu:
+                "Your work":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your travel and transport":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your location or region":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your general and environmental health":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your personal traits, characteristics, abilities":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your insurance arrangements":
+                    $scoring1(8.34)
+
+        "Correct":
+            with hpunch
+
+            Missy "Your are wrong. Intersections without traffic lights are very dangerous and there is a high risk of traffic accidents."
+
+            menu:
+                "Your work":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your travel and transport":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your location or region":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your general and environmental health":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your personal traits, characteristics, abilities":
+                    with hpunch
+                    $scoring1(0)
+
+                "Your insurance arrangements":
+                    $scoring1(8.34)
+
+
+label result:
+
+    if isshake:
+        with hpunch
+        $isshake=False
+
+    $timeout_label = False
+
+
+    show Missy Normal at center:
+        xalign 0.7
+    Missy "OK, now let's see the results of your test."
+
+    if score1>=83.4:
+
+        Missy "Your score is [score1]. Congratulations on passing the test."
+
+        Missy "You can contact me to apply for the exchange student program."
+
+        $showscore=False
+        $timeout_label = None
+    else:
+
+        Missy "Your score is [score1]. It's too bad you didn't pass the test. "
+
+        Missy "You need a minimum score of 80 to pass the exam. "
+
+        Missy "Not passing the test means not being able to take part in the interaction programme."
+
+        Missy "If you don't pass, you can take the test again."
+
+        $showscore=False
+        $timeout_label = None
+
+        jump exam
+
+
+    "Kevin also passed the test"
+    "You ended up at the Von Neumann University (the best computer university) to study computing as interactive students."
 
     scene white
     with fade
@@ -678,14 +685,14 @@ label chapter3:
             Mys "Missy, our student card can't go through the entrance of the school. what's going on?"
 
             show Missy Surprise at center:
-                xalign 0.7
+                xalign 0.8
 
             Missy "This shouldn't happen, I activated them myself when I gave you the student cards."
             Missy "I'll check them again."
             "......"
 
             show Missy Normal at center:
-                xalign 0.7
+                xalign 0.8
             Missy "I know. The student card needs to be activated by VON Neumann University."
             Missy "I have contacted the their staff. It should be ready in a few minutes."
 
@@ -785,7 +792,10 @@ label chapter3:
     "But life is not always peaceful."
     "On this day you are using the computer in the computer building to study as usual."
 
-    Mys "Wait, why is my computer screen suddenly black?"
+    scene bg screen
+    with dissolve
+
+    Mys "Wait, why is my computer screen suddenly white?"
     Kevin "Look, the computer screen shows a line."
     Kevin "You have been poisoned, to detoxify please pay £300! "
     Kevin "Do not turn off your computer, or your computer will be destroyed."
@@ -794,38 +804,46 @@ label chapter3:
     Mys "So maybe the hackers tricked us? "
     Mys "I don't think their technology is that great. He's scaring me."
     Kevin "I thought it would be better to inform the supervisor in charge of us at the VON Neumann University."
-    #Option "Shutdown"
-    Mys "Rebooting solves 100% of the problem!"
-    "Notify supervisor"
-    "It makes sense, as the best computer university in the world, their computers must have excellent firewalls."
-    "If hackers can break it, they must be very skilled."
 
-    Shutdown Mys "Wow, the computer really can't open! "
-    Mys "What should I do?. All my data is in there."
-    Kevin "Notify the supervisor quickly!"
+    menu:
 
-    Mys "Supervisor, my computer is poisoned and it won't open, which means our firewall is vulnerable!"
-    Mys "Hackers may have access to our information."
-    Supervisor "Yes, I understand. Please remember to let me know if you encounter any problems in school."
-    Supervisor "We will check and close the loopholes immediately."
-    Mys "Can that computer still be repaired?"
-    Supervisor "I don't think so, they are very skilled."
-    Supervisor "If there's any of your homework in there, I'm afraid you'll have to redo it."
-    Mys "Oh my God. Help....."
-    #Notify the supervisor
+        "Shutdown":
+            Mys "Rebooting solves 100% of the problem!"
 
-    Mys "Supervisor, my computer has been poisoned."
-    "I'm afraid to operate it casually. Our system has loopholes!"
-    "Luckily you informed me in time. "
-    "I'm sending the staff to search it. See if it can be fixed."
-    "......"
-    Supervisor "We've found the vulnerability and your computer should work now."
-    Mys "Thanks so much!"
-    Supervisor "I would also like to thank you"
-    Supervisor "If you had not informed us in time, all the computers in our school might have been poisoned. "
-    Supervisor "It would have caused a lot of damage."
-    Supervisor "Please remember to let me know in the first instance if you have any questions."
-    Mys "No problem."
+            scene bg screenblack
+            with dissolve
+
+            Mys "My god, the computer can't open! "
+            Mys "What should I do?. All my data is in there."
+            Kevin "Notify the supervisor quickly!"
+
+            Mys "Supervisor, my computer is poisoned and it won't open, which means our firewall is vulnerable!"
+            Mys "Hackers may have access to our information."
+            Supervisor "Yes, I understand. Please remember to let me know if you encounter any problems in school."
+            Supervisor "We will check and close the loopholes immediately."
+            Mys "Can that computer still be repaired?"
+            Supervisor "I don't think so, they are very skilled."
+            Supervisor "If there's any of your homework in there, I'm afraid you'll have to redo it."
+            Mys "Oh my God. Help....."
+        "Notify supervisor":
+
+            Mys "It makes sense, as the best computer university in the world, their computers must have excellent firewalls."
+            Mys "If hackers can break it, they must be very skilled."
+
+            Mys "Supervisor, my computer has been poisoned."
+            Mys "I'm afraid to operate it casually. Our system has loopholes!"
+            Supervisor "Luckily you informed me in time. "
+            Supervisor "I'm sending the staff to search it. See if it can be fixed."
+            "......"
+            Supervisor "We've found the vulnerability and your computer should work now."
+            Mys "Thanks so much!"
+            Supervisor "I would also like to thank you"
+            Supervisor "If you had not informed us in time, all the computers in our school might have been poisoned. "
+            Supervisor "It would have caused a lot of damage."
+            Supervisor "Please remember to let me know in the first instance if you have any questions."
+            Mys "No problem."
+
+
 
     "After the viral crisis, you decide to go to the window to get some fresh air and relax your brain."
     "You open the tiktok at the window."
