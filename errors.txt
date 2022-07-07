@@ -1,0 +1,12 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+The label exam is defined twice, at File "game/chapter3.rpy", line 131:
+label exam:
+and File "game/chapter3.rpy", line 140:
+label exam:
+
+
+Ren'Py Version: Ren'Py 7.4.10.2178
+Wed Jul  6 18:00:33 2022

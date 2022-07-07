@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/chapter3.rpy", line 733, in script
+    linear 0.5 xalign 0.7
+Exception: Say has image attributes (u'Guard',), but there's no image tag associated with the speaking character.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/chapter3.rpy", line 733, in script
+    linear 0.5 xalign 0.7
+  File "renpy/ast.py", line 721, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "renpy/exports.py", line 1417, in say
+    who(what, *args, **kwargs)
+  File "renpy/character.py", line 1189, in __call__
+    old_attr_state = self.handle_say_attributes(False, interact)
+  File "renpy/character.py", line 1001, in handle_say_attributes
+    if self.resolve_say_attributes(predicting, attrs):
+  File "renpy/character.py", line 927, in resolve_say_attributes
+    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
+Exception: Say has image attributes (u'Guard',), but there's no image tag associated with the speaking character.
+
+Windows-10-10.0.22000
+Ren'Py 7.4.10.2178
+Healthy and Safety 1.0
+Wed Jul  6 18:03:59 2022
