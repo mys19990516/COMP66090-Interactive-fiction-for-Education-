@@ -51,9 +51,10 @@ default IsInputname = False
 define mys = Character("Mys",image="player_a")
 define Missy = Character("Missy",image="missy")
 define Kevin = Character("Kevin")
-define povname = "Mys"
+define povname = "Messi"
 define Mys = Character("[povname]",image="player_a")
 define Security = Character("Security")
+define Supervisor = Character("Supervisor")
 
 
 image purple:

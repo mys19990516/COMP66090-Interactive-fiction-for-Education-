@@ -2,11 +2,13 @@
 errors listed below, and try again.
 
 
-The label exam is defined twice, at File "game/chapter3.rpy", line 131:
-label exam:
-and File "game/chapter3.rpy", line 140:
-label exam:
+File "game/chapter3.rpy", line 940: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    show Missy Sad at center:
+    ^
 
+File "game/chapter3.rpy", line 994: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    show Missy Rage at center:
+    ^
 
 Ren'Py Version: Ren'Py 7.4.10.2178
-Wed Jul  6 18:00:33 2022
+Thu Jul  7 22:20:01 2022

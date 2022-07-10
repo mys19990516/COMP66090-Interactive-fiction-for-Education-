@@ -1,7 +1,7 @@
 # https://patreon.renpy.org/timed-choice-menus.html
 
 # How long the player has to make a choice in timeout seconds.
-default timeout = 10.0
+default timeout = 20.0
 
 # The label the player is sent to if they fail to make a choice in the time
 # allotted. If None, the timeout is disabled.
