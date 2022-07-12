@@ -889,293 +889,293 @@ label result:
 
             "After paying the fine at the police station"
 
-    #
-    # scene bg university1
-    # with dissolve
-    # $showplayer()
-    #
-    # show kevin:
-    #     zoom 0.5
-    #     xalign 1.0 yalign 0.35
-    #     linear 0.5 xalign 0.7
-    #
-    # Mys "We're in, finally."
-    # Kevin "Yes, we must have a good tour of the campus."
-    #
-    # "Then you begin your studies at the VON Neumann University."
-    # "But life is not always peaceful."
-    # "On this day you are using the computer in the computer building to study as usual."
-    #
-    # scene bg screen
-    # with dissolve
-    #
-    # Mys "Wait, why is my computer screen suddenly white?"
-    # Kevin "Look, the computer screen shows a line."
-    # Kevin "You have been poisoned, to detoxify please pay £300! "
-    # Kevin "Do not turn off your computer, or your computer will be destroyed."
-    # Mys "What should I do? How about turning it off?"
-    # Kevin "The word on the computer screen says not to turn it off."
-    # Mys "So maybe the hackers tricked us? "
-    # Mys "I don't think their technology is that great. He's scaring me."
-    # Kevin "I thought it would be better to inform the supervisor in charge of us at the VON Neumann University."
-    # Kevin "Missy said that if you have any problems during the placement, you should contact your local supervisor first."
-    #
-    # menu:
-    #
-    #     "Shutdown":
-    #
-    #
-    #         Mys "Rebooting solves all problems!"
-    #
-    #         scene bg screenblack
-    #         with dissolve
-    #
-    #         $showplayer()
-    #
-    #         show kevin:
-    #             zoom 0.5
-    #             xalign 1.0 yalign 0.35
-    #             linear 0.5 xalign 0.7
-    #
-    #         Mys "My god, the computer can't open! "
-    #         Mys "What should I do?. All my data is in there."
-    #         Kevin "Notify the supervisor quickly!"
-    #
-    #         scene bg desk
-    #         with dissolve
-    #
-    #         $showplayer()
-    #
-    #         show supervisor:
-    #             xalign 1.0 yalign 0.35
-    #             linear 0.5 xalign 0.7
-    #
-    #         Mys "Supervisor, my computer is poisoned and it won't open, which means our firewall is vulnerable!"
-    #         Mys "Hackers may have access to our information."
-    #
-    #
-    #         Supervisor "Yes, I understand. Please remember to let me know if you encounter any problems in school."
-    #         Supervisor "We will check and close the loopholes immediately."
-    #         Mys "Can that computer still be repaired?"
-    #         Supervisor "I don't think so, they are very skilled."
-    #         Supervisor "If there's any of your homework in there, I'm afraid you'll have to redo it."
-    #         Mys "Oh my God. Help....."
-    #     "Notify supervisor":
-    #
-    #         $showplayer()
-    #
-    #         show kevin:
-    #             zoom 0.5
-    #             xalign 1.0 yalign 0.35
-    #             linear 0.5 xalign 0.7
-    #
-    #         Mys "It makes sense, as the best computer university in the world, their computers must have excellent firewalls."
-    #         Mys "If hackers can break it, they must be very skilled."
-    #         Kevin "Notify the supervisor quickly!"
-    #
-    #         scene bg desk
-    #         with dissolve
-    #
-    #         $showplayer()
-    #
-    #
-    #         Mys "Supervisor, my computer has been poisoned."
-    #         Mys "I'm afraid to operate it casually. Our system has loopholes!"
-    #
-    #         show supervisor:
-    #             xalign 1.0 yalign 0.35
-    #             linear 0.5 xalign 0.7
-    #
-    #         Supervisor "Luckily you informed me in time. "
-    #         Supervisor "I'm sending the staff to search it. See if it can be fixed."
-    #         "......"
-    #         Supervisor "We've found the vulnerability and your computer should work now."
-    #         Mys "Thanks so much!"
-    #         Supervisor "I would also like to thank you"
-    #         Supervisor "If you had not informed us in time, all the computers in our school might have been poisoned. "
-    #         Supervisor "It would have caused a lot of damage."
-    #         Supervisor "Please remember to let me know in the first instance if you have any questions."
-    #         Mys "No problem."
-    #
-    # scene bg view
-    # with dissolve
-    #
-    # "After the viral crisis, you decide to go to the window to get some fresh air and relax your brain."
-    # "You open the tiktok at the window."
-    #
-    # $showplayer()
-    #
-    # Mys "hahaha, this video is so funny."
-    # "Suddenly a gust of wind blew, and you didn't hold your phone steady and dropped it."
-    # Mys "Oh my god! I'm so unlucky."
-    # "You rush downstairs to check your phone."
-    #
-    # scene bg breakscreen
-    # with dissolve
-    #
-    # $showplayer()
-    # show kevin:
-    #     zoom 0.5
-    #     xalign 1.0 yalign 0.35
-    #     linear 0.5 xalign 0.7
-    #
-    # Mys "It's finished, It's completely broken."
-    # Kevin "Looks like you need a new phone."
-    # Mys "Damn! The phone card is also broken."
-    # Kevin "Come on, I'll walk you to get a new phone and a mobile phone card."
-    #
-    # scene bg store
-    # with dissolve
-    #
-    # $showplayer()
-    # show kevin:
-    #     zoom 0.5
-    #     xalign 1.0 yalign 0.35
-    #     linear 0.5 xalign 0.7
-    #
-    # "Electronic Market"
-    # Mys "Ok, this is the phone I want."
-    # Kevin "Next it's time for the new phone number."
-    # Mys "Wow, 1111111111, that's definitely a really great mobile number!"
-    # Kevin "Indeed, very memorable!"
-    # Mys "Then it's decidedly it."
-    # Mys "OK, we're done shopping, let's go!"
-    # Kevin "Are you forgetting something?"
-    # Mys "What is it?"
-    # Kevin "You should update your contact details at missy."
-    # Kevin "You must also ensure that the university has up-to-date contact information for you on Campus Solutions. "
-    # Kevin "You need to know how to contact you during your placement in the event of an emergency."
-    # Kevin "You should also ensure that you check your email regularly while away from the University."
-    #
-    # Mys "But this is not our country's mobile phone card, I will replace it when I go back."
-    # Kevin "You should replace it immediately, it's very important!"
-    # Mys "I really don't think there's anything wrong with changing to a fixed mobile number when I go back. This one is only temporary."
-    #
-    # $hideplayer()
-    # hide kevin
-    # menu:
-    #     "Update":
-    #
-    #         $showplayer()
-    #
-    #         Mys "I should update. The contact details must be up to date."
-    #
-    #         Mys "ok, I'm done updating."
-    #         "You got a call from missy just after your phone was updated."
-    #         Mys "hi, missy. what a coincidence, I just updated my phone number."
-    #
-    #         show Missy Sad at center:
-    #             xalign 0.7
-    #
-    #         Missy "I've been calling your original phone number for a long time, but I can't get through."
-    #         Missy "Thank God you have updated your contact details."
-    #         Mys "I should thank kevin, who convinced me to update it."
-    #         Missy "I now have something very urgent to inform you."
-    #         Missy "A variant of the COVID-19 has appeared in your area!"
-    #         Missy "Our country wants to guarantee our safety by interrupting flights with the country you are in within 72 hours!"
-    #         Missy "You need to come back immediately!"
-    #         Missy "Otherwise, I don't know when you will be back!"
-    #
-    #         Mys "Oh my goodness, I get it."
-    #         Mys "Thank you!"
-    #         Missy "It's still very important to keep your contact details open!"
-    #
-    #     "Don't Update":
-    #
-    #         $showplayer()
-    #         show kevin:
-    #             zoom 0.5
-    #             xalign 1.0 yalign 0.35
-    #             linear 0.5 xalign 0.7
-    #
-    #
-    #         Mys "If I update now, I still have to update it when I go back to Manchester. "
-    #         Mys "It's a hassle. I don't usually use my mobile number, I can just use email."
-    #
-    #         Kevin "Well, it's your choice and I respect that."
-    #
-    #         scene bg dormitory
-    #         with dissolve
-    #
-    #         "On this night"
-    #         "You hear a heavy knock on the door."
-    #
-    #
-    #         "Mys, Mys, wake up, something big is happening!"
-    #
-    #         $showplayer()
-    #         Mys "Who's there?"
-    #
-    #         Kevin "I am Kevin."
-    #
-    #         show kevin:
-    #             zoom 0.5
-    #             xalign 1.0 yalign 0.35
-    #
-    #             linear 0.5 xalign 0.7
-    #         Mys "I'm so sleepy, it's 2am. What's going on."
-    #         Kevin "I just got a call from Missy."
-    #         Kevin "Missy says we have a local variant of the COVID-19!"
-    #         Kevin "Our country is going to interrupt flights with the country you are in within 72 hours as a way of keeping us safe!"
-    #         Kevin "We need to go back immediately! Otherwise we don't know when we'll be back!"
-    #
-    #         Mys "Oh my goodness, I get it."
-    #         Mys "Don't forget to update your contact details, Missy can't reach you. She is very anxious."
-    #         Mys "OK!"
-    #
-    #         "After the update"
-    #         hide kevin
-    #
-    #         show Missy Rage at center:
-    #
-    #             xalign 0.7
-    #
-    #
-    #         Missy "Mys, what the hell were you thinking?"
-    #         Missy "Why don't you update your contact details. I'm going crazy."
-    #
-    #         Mys "I don't think it's necessary to update this number, I won't use it when I go back."
-    #         Missy "This thought is wrong!"
-    #         Missy "You should keep your contact details open at all times."
-    #         Mys "I understand, missy, and I'm very sorry"
-    #         Missy "Kevin told you, didn't he?"
-    #
-    #         Mys "I've got it. We'll go back tomorrow."
-    #
-    #         "Finally you made it back to Manchester without incident."
-    #
-    #
-    #
-    # scene bg graduation
-    # with dissolve
-    #
-    # "Everything went well in your later university life."
-    # "On graduation ceremony"
-    #
-    # show Missy Laugh at center:
-    #     xalign 0.8
-    #
-    # $showplayer()
-    # show kevin:
-    #     zoom 0.5
-    #     xalign 1.0 yalign 0.35
-    #     linear 0.5 xalign 0.7
-    #
-    # Missy "Congratulations on successfully completing your studies."
-    # "At the same time, congratulations on your healthy and safe university experience."
-    # "I wish you the best of luck in the future."
-    #
-    # Kevin "Thank you Missy!"
-    # Mys "Thanks!!"
-    #
-    # "You ended up finishing your studies successfully and finding the right job. "
-    # "Life has been on top ever since."
-    #
-    # scene white
-    # with fade
-    #
-    # show text "The game is over! We hope you have learnt about health and safety at university."
-    # pause
+
+    scene bg university1
+    with dissolve
+    $showplayer()
+
+    show kevin:
+        zoom 0.5
+        xalign 1.0 yalign 0.35
+        linear 0.5 xalign 0.7
+
+    Mys "We're in, finally."
+    Kevin "Yes, we must have a good tour of the campus."
+
+    "Then you begin your studies at the VON Neumann University."
+    "But life is not always peaceful."
+    "On this day you are using the computer in the computer building to study as usual."
+
+    scene bg screen
+    with dissolve
+
+    Mys "Wait, why is my computer screen suddenly white?"
+    Kevin "Look, the computer screen shows a line."
+    Kevin "You have been poisoned, to detoxify please pay £300! "
+    Kevin "Do not turn off your computer, or your computer will be destroyed."
+    Mys "What should I do? How about turning it off?"
+    Kevin "The word on the computer screen says not to turn it off."
+    Mys "So maybe the hackers tricked us? "
+    Mys "I don't think their technology is that great. He's scaring me."
+    Kevin "I thought it would be better to inform the supervisor in charge of us at the VON Neumann University."
+    Kevin "Missy said that if you have any problems during the placement, you should contact your local supervisor first."
+
+    menu:
+
+        "Shutdown":
+
+
+            Mys "Rebooting solves all problems!"
+
+            scene bg screenblack
+            with dissolve
+
+            $showplayer()
+
+            show kevin:
+                zoom 0.5
+                xalign 1.0 yalign 0.35
+                linear 0.5 xalign 0.7
+
+            Mys "My god, the computer can't open! "
+            Mys "What should I do?. All my data is in there."
+            Kevin "Notify the supervisor quickly!"
+
+            scene bg desk
+            with dissolve
+
+            $showplayer()
+
+            show supervisor:
+                xalign 1.0 yalign 0.35
+                linear 0.5 xalign 0.7
+
+            Mys "Supervisor, my computer is poisoned and it won't open, which means our firewall is vulnerable!"
+            Mys "Hackers may have access to our information."
+
+
+            Supervisor "Yes, I understand. Please remember to let me know if you encounter any problems in school."
+            Supervisor "We will check and close the loopholes immediately."
+            Mys "Can that computer still be repaired?"
+            Supervisor "I don't think so, they are very skilled."
+            Supervisor "If there's any of your homework in there, I'm afraid you'll have to redo it."
+            Mys "Oh my God. Help....."
+        "Notify supervisor":
+
+            $showplayer()
+
+            show kevin:
+                zoom 0.5
+                xalign 1.0 yalign 0.35
+                linear 0.5 xalign 0.7
+
+            Mys "It makes sense, as the best computer university in the world, their computers must have excellent firewalls."
+            Mys "If hackers can break it, they must be very skilled."
+            Kevin "Notify the supervisor quickly!"
+
+            scene bg desk
+            with dissolve
+
+            $showplayer()
+
+
+            Mys "Supervisor, my computer has been poisoned."
+            Mys "I'm afraid to operate it casually. Our system has loopholes!"
+
+            show supervisor:
+                xalign 1.0 yalign 0.35
+                linear 0.5 xalign 0.7
+
+            Supervisor "Luckily you informed me in time. "
+            Supervisor "I'm sending the staff to search it. See if it can be fixed."
+            "......"
+            Supervisor "We've found the vulnerability and your computer should work now."
+            Mys "Thanks so much!"
+            Supervisor "I would also like to thank you"
+            Supervisor "If you had not informed us in time, all the computers in our school might have been poisoned. "
+            Supervisor "It would have caused a lot of damage."
+            Supervisor "Please remember to let me know in the first instance if you have any questions."
+            Mys "No problem."
+
+    scene bg view
+    with dissolve
+
+    "After the viral crisis, you decide to go to the window to get some fresh air and relax your brain."
+    "You open the tiktok at the window."
+
+    $showplayer()
+
+    Mys "hahaha, this video is so funny."
+    "Suddenly a gust of wind blew, and you didn't hold your phone steady and dropped it."
+    Mys "Oh my god! I'm so unlucky."
+    "You rush downstairs to check your phone."
+
+    scene bg breakscreen
+    with dissolve
+
+    $showplayer()
+    show kevin:
+        zoom 0.5
+        xalign 1.0 yalign 0.35
+        linear 0.5 xalign 0.7
+
+    Mys "It's finished, It's completely broken."
+    Kevin "Looks like you need a new phone."
+    Mys "Damn! The phone card is also broken."
+    Kevin "Come on, I'll walk you to get a new phone and a mobile phone card."
+
+    scene bg store
+    with dissolve
+
+    $showplayer()
+    show kevin:
+        zoom 0.5
+        xalign 1.0 yalign 0.35
+        linear 0.5 xalign 0.7
+
+    "Electronic Market"
+    Mys "Ok, this is the phone I want."
+    Kevin "Next it's time for the new phone number."
+    Mys "Wow, 1111111111, that's definitely a really great mobile number!"
+    Kevin "Indeed, very memorable!"
+    Mys "Then it's decidedly it."
+    Mys "OK, we're done shopping, let's go!"
+    Kevin "Are you forgetting something?"
+    Mys "What is it?"
+    Kevin "You should update your contact details at missy."
+    Kevin "You must also ensure that the university has up-to-date contact information for you on Campus Solutions. "
+    Kevin "You need to know how to contact you during your placement in the event of an emergency."
+    Kevin "You should also ensure that you check your email regularly while away from the University."
+
+    Mys "But this is not our country's mobile phone card, I will replace it when I go back."
+    Kevin "You should replace it immediately, it's very important!"
+    Mys "I really don't think there's anything wrong with changing to a fixed mobile number when I go back. This one is only temporary."
+
+    $hideplayer()
+    hide kevin
+    menu:
+        "Update":
+
+            $showplayer()
+
+            Mys "I should update. The contact details must be up to date."
+
+            Mys "ok, I'm done updating."
+            "You got a call from missy just after your phone was updated."
+            Mys "hi, missy. what a coincidence, I just updated my phone number."
+
+            show Missy Sad at center:
+                xalign 0.7
+
+            Missy "I've been calling your original phone number for a long time, but I can't get through."
+            Missy "Thank God you have updated your contact details."
+            Mys "I should thank kevin, who convinced me to update it."
+            Missy "I now have something very urgent to inform you."
+            Missy "A variant of the COVID-19 has appeared in your area!"
+            Missy "Our country wants to guarantee our safety by interrupting flights with the country you are in within 72 hours!"
+            Missy "You need to come back immediately!"
+            Missy "Otherwise, I don't know when you will be back!"
+
+            Mys "Oh my goodness, I get it."
+            Mys "Thank you!"
+            Missy "It's still very important to keep your contact details open!"
+
+        "Don't Update":
+
+            $showplayer()
+            show kevin:
+                zoom 0.5
+                xalign 1.0 yalign 0.35
+                linear 0.5 xalign 0.7
+
+
+            Mys "If I update now, I still have to update it when I go back to Manchester. "
+            Mys "It's a hassle. I don't usually use my mobile number, I can just use email."
+
+            Kevin "Well, it's your choice and I respect that."
+
+            scene bg dormitory
+            with dissolve
+
+            "On this night"
+            "You hear a heavy knock on the door."
+
+
+            "Mys, Mys, wake up, something big is happening!"
+
+            $showplayer()
+            Mys "Who's there?"
+
+            Kevin "I am Kevin."
+
+            show kevin:
+                zoom 0.5
+                xalign 1.0 yalign 0.35
+
+                linear 0.5 xalign 0.7
+            Mys "I'm so sleepy, it's 2am. What's going on."
+            Kevin "I just got a call from Missy."
+            Kevin "Missy says we have a local variant of the COVID-19!"
+            Kevin "Our country is going to interrupt flights with the country you are in within 72 hours as a way of keeping us safe!"
+            Kevin "We need to go back immediately! Otherwise we don't know when we'll be back!"
+
+            Mys "Oh my goodness, I get it."
+            Mys "Don't forget to update your contact details, Missy can't reach you. She is very anxious."
+            Mys "OK!"
+
+            "After the update"
+            hide kevin
+
+            show Missy Rage at center:
+
+                xalign 0.7
+
+
+            Missy "Mys, what the hell were you thinking?"
+            Missy "Why don't you update your contact details. I'm going crazy."
+
+            Mys "I don't think it's necessary to update this number, I won't use it when I go back."
+            Missy "This thought is wrong!"
+            Missy "You should keep your contact details open at all times."
+            Mys "I understand, missy, and I'm very sorry"
+            Missy "Kevin told you, didn't he?"
+
+            Mys "I've got it. We'll go back tomorrow."
+
+            "Finally you made it back to Manchester without incident."
+
+
+
+    scene bg graduation
+    with dissolve
+
+    "Everything went well in your later university life."
+    "On graduation ceremony"
+
+    show Missy Laugh at center:
+        xalign 0.8
+
+    $showplayer()
+    show kevin:
+        zoom 0.5
+        xalign 1.0 yalign 0.35
+        linear 0.5 xalign 0.7
+
+    Missy "Congratulations on successfully completing your studies."
+    "At the same time, congratulations on your healthy and safe university experience."
+    "I wish you the best of luck in the future."
+
+    Kevin "Thank you Missy!"
+    Mys "Thanks!!"
+
+    "You ended up finishing your studies successfully and finding the right job. "
+    "Life has been on top ever since."
+
+    scene white
+    with fade
+
+    show text "The game is over! We hope you have learnt about health and safety at university."
+    pause
 
 
 

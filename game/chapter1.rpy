@@ -129,11 +129,23 @@ label first_chapter:
 #
 #     Missy "The causes of university fires are broadly: unattended cooking"
 #     Missy "candles left unattended or placed next to combustible material, carelessly discarded cigarettes, "
-#     Missy " heat sources next to curtains, experiments left unattended."
+#     Missy "heat sources next to curtains, experiments left unattended."
+#     Missy "Do you think Kevin's behavior is among these dangerous behaviors?"
+#
+#     menu:
+#
+#         "I think it belongs to them.":
+#             $showplayer()
+#
+#             Mys "Kevin's behavior is among them. It may casue fire."
+#
+#         "I don't think so.":
+#             $showplayer()
+#
+#             Mys "Kevin's behavior is not among these dangerous behaviors "
+#             Missy "Your are wrong, it definitely belongs to them."
 #
 #
-#     $showplayer()
-#     Mys "Kevin's behaviour is among the reasons for this."
 #
 #     $hideplayer()
 #
@@ -141,14 +153,29 @@ label first_chapter:
 #     Missy "And An ignition source - usually some form of heat, which can set the fuel alight."
 #
 #     Missy "If you can remove any of these three you can prevent a fire."
+#     Missy "What factors can be removed to prevent fire?"
+#     menu:
 #
-#     $showplayer()
+#         "Oxygen":
+#             $showplayer()
+#             Mys "I think we can remove the oxygen."
+#             Missy "That's not correct. Oxygen is present in the atmosphere. It can't usually be removed."
+#             Missy " You can try removing the other two factors."
 #
-#     Mys "I see, but oxygen is present in the atmosphere. It can't usually be removed, so I can try removing those two factors."
+#         "Fuel":
+#             $showplayer()
+#             Mys "I think we can remove the Fuel."
+#             Missy "Yes! Oxygen is present in the atmosphere. It can't usually be removed."
+#             Missy " You can try removing the other two factors."
+#
+#         "Ignition source":
+#             $showplayer()
+#             Mys "I think we can remove the ignition source."
+#             Missy "Yes! Oxygen is present in the atmosphere. It can't usually be removed."
+#             Missy " You can try removing the other two factors."
 #
 #     $hideplayer()
 #
-#     Missy "You are right."
 #     Missy "There are also a few things you should remember about fire."
 #     Missy "Handle discarded cigarette butts with care. "
 #     Missy "Discarded cigarette butts or even matches can start a fire if they are still hot and come into contact with combustible materials."
@@ -540,8 +567,8 @@ label first_chapter:
 #             show smoke:
 #                 xalign 0.9 yalign -0.1
 #
-#             "As you are running down the stairs, you find that the fire has reached your floor."
-#             "Because you left the fire door open! It's spreading fast."
+#             "As you are running down the stairs, you find that the smoke has reached your floor."
+#             "Because you left the fire door open! The smoke spreading fast. It's very thick."
 #             "You can no longer escape from the building"
 #
 #             $showplayer()
@@ -826,4 +853,4 @@ label first_chapter:
 #             Mys "Gosh, I'm glad I took kevin's advice."
 #     "In the end, you successfully complete the assignment with a good grade."
 #
-     jump chapter2
+    jump chapter2

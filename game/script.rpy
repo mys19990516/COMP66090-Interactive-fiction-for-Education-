@@ -201,18 +201,18 @@ label start:
     # "[povname], choose an image you like next."
     menu:
         #"[povname], choose an image you like next."
-        "Boy":
+        "I want to choose a male.":
 
             call screen create_male
             $showplayercenter()
             "Nice look!"
-        "Girl":
+        "I want to choose a female.":
             $isMale=False
 
             call screen create_female
             $showplayercenter()
             "Nice look!"
-        "Skip":
+        "I don't want to choose.":
 
             $showplayercenter()
 
