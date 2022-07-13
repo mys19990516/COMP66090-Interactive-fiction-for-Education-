@@ -35,6 +35,10 @@ image Missy Mad =Composite(
       (100,300),
       (0,-650),"images/character/Missy/Missy-Mad.png"
 )
+image Missy Sad =Composite(
+      (100,300),
+      (0,-650),"images/character/Missy/Missy-Sad.png"
+)
 
 image player_a  = Composite(
     (300, 600),

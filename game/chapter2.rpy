@@ -16,8 +16,8 @@ init python:
     retrain3=False
     retrain4=False
     retrain5=False
-    q1=False
-    q2=False
+    qq1=False
+    qq2=False
     Lab1=False
     Lab2=False
     Lab3=False
@@ -1013,12 +1013,12 @@ label collectPPE:
 #         Missy "I've decided to give you another job. "
 #         menu:
 #             "Inquire about job content":
-#                 $q1=True
+#                 $qq1=True
 #                 Mys "What is this job?"
 #                 Missy "As our university is an internationally renowned school, many letters are collected every day."
 #                 Missy "Your task will be to answer them. "
 #             "Ask about salary":
-#                 $q2=True
+#                 $qq2=True
 #                 Mys "What is the salary of this job?"
 #                 Missy "This job allows you to make some mistakes, but the pay is much lower. "
 #                 Missy "It's about £1,500 a month."

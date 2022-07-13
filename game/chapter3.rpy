@@ -7,6 +7,8 @@ init python:
     q2=False
     q3=False
 
+    ch1=False
+    ch2=False
     def scoring1(mark):
 
         global score1
@@ -21,131 +23,131 @@ init python:
 
 label chapter3:
 
-    # scene white
-    # with fade
-    #
-    # show text "Summer vacation time is always fast, a new semester has arrived."
-    # pause
-    #
-    # show text "It is customary for Missy to give a meeting to all students on the first day of the new term."
-    # pause
-    #
-    # scene bg classroom
-    # with dissolve
-    #
-    # show Missy Normal at center:
-    #     xalign 0.8
-    #
-    # Missy "Hello everyone, I hope all of you had a great holiday."
-    # Missy "Most people should have been restricted from travelling due to the covid-19."
-    # Missy "However, with the improvement of the epidemic,"
-    # Missy "travel restrictions have all been canceled for the new term!"
-    # Missy "In the new semester, to make up for not travelling in the summer vacation."
-    # Missy "The university offers an exchange programme for our majors."
-    # Missy "All students are welcome!"
-    # Missy "You will go to universities around the world for 3 months of study."
-    # Missy "All students are welcome to sign up!"
-    #
-    # hide Missy
-    #
-    # $showplayer()
-    #
-    # show kevin:
-    #     zoom 0.5
-    #     xalign 1.0 yalign 0.35
-    #     linear 0.5 xalign 0.7
-    #
-    # Kevin "Do you want to participate?"
-    #
-    # menu:
-    #     "No, I don't":
-    #         Mys "I prefer to stay in our school."
-    #         Kevin "Come on! It's gonna be fun. We can experience cultures from other places."
-    #         Mys "OK!"
-    #     "Yes, I want":
-    #         Mys "I would love to participate!"
-    #         Mys "It was always my dream to go to Von Neumann University (the best computer university in the world)."
-    #         Kevin "Then let's go!"
-    #
-    #
-    #
-    # hide kevin
-    # $hideplayer()
-    #
-    # show Missy Normal at center:
-    #     xalign 0.8
-    #
-    # Missy "I've already heard from some students said they really want to go."
-    # Missy "But before you sign up, I would like to remind you about the safety about the placement."
-    #
-    # $showplayer()
-    #
-    #
-    # Mys "I have a questions."
-    #
-    # show Missy Laugh at center:
-    #     xalign 0.8
-    # Missy "I am happy to answer them."
-    #
-    # menu question:
-    #     "what is a placement?":
-    #         $q1=True
-    #         Mys "What is a placement?"
-    #         Missy "Placement involves transferring your supervision to a third party placement provider who is usually said to be another organisation."
-    #         Missy "It is clear that exchange learning is a placement."
-    #         jump question
-    #
-    #     "What should I do to attend?":
-    #         $q2=True
-    #         Mys "What should I do to attend?"
-    #         Missy "Many of the school's activities are part of the placement."
-    #         Missy "If the activity is a placement, you must apply to the school and wait for its approval."
-    #         Mys "If the school doesn't approve me to attend, "
-    #         Mys "or if I don't submit an application, can I still attend?"
-    #         Missy "Then you can't take part, so please remember to always submit an application! "
-    #         Missy "So you need to be able to discern what activities are placements."
-    #
-    #         jump question
-    #
-    #     "What do I need to be aware of regarding the safety of placement?":
-    #         $q3=True
-    #         Mys "What do I need to be aware of regarding the safety of placement?"
-    #         Missy "The safety of our students is always our primary concern, even when your supervision is diverted."
-    #
-    #         Missy "There are three main stages of security in resettlement: before, during and after resettlement."
-    #         Missy "The main thing that schools may ask you to provide after placement is reports on standard templates or electronic questionnaires."
-    #         Missy "Or the school may ask you to share your experiences for the following year's students."
-    #         Missy "The focus of placement safety is pre and post placement."
-    #
-    #         Missy "Before placing, you first need to consider the practicality of the placement."
-    #         Missy "Practicality means do you need a visa or other travel document? "
-    #         Missy "Is your passport valid?"
-    #         Missy "Will you have enough money to cover the costs of your placement,"
-    #         Missy "and will you be able to access additional funds in case of an emergency? "
-    #         Missy "Considering all of these will help ensure that everything you need is in place before you leave our university."
-    #
-    #         Missy "You then need to consider the risks in 6 ways. "
-    #         Missy "Your work, your travel and transport, your location or area, your general and environmental health."
-    #         Missy "Your personal traits, characteristics, abilities and your insurance arrangements."
-    #
-    #         Missy "In placement, -you should be in regular contact with your workplace supervisor."
-    #         Missy "Communicate with your school on a regular basis."
-    #         Missy "You should also establish emergency contact arrangements."
-    #
-    #         jump question
-    #
-    #     "OK, I don't have question now." if q1 and q2 and q3:
-    #
-    #         Mys "OK, I don't have question now."
-    #
-    #         Missy "All right. Please come to me and apply now"
-    #
-    #         "After missy, you and kevin signd up for the event."
-    #
-    #         Kevin "[povname], I have some question about these."
-    #         Kevin "Can you help me?"
-    #         Mys "Sure!"
-    #         Missy "I am also here for you, Kevin. To prevent [povname] from giving you wrong answers."
+    scene white
+    with fade
+
+    show text "Summer vacation time is always fast, a new semester has arrived."
+    pause
+
+    show text "It is customary for Missy to give a meeting to all students on the first day of the new term."
+    pause
+
+    scene bg classroom
+    with dissolve
+
+    show Missy Normal at center:
+        xalign 0.8
+
+    Missy "Hello everyone, I hope all of you had a great holiday."
+    Missy "Most people should have been restricted from travelling due to the covid-19."
+    Missy "However, with the improvement of the epidemic,"
+    Missy "travel restrictions have all been canceled for the new term!"
+    Missy "In the new semester, to make up for not travelling in the summer vacation."
+    Missy "The university offers an exchange programme for our majors."
+    Missy "All students are welcome!"
+    Missy "You will go to universities around the world for 3 months of study."
+    Missy "All students are welcome to sign up!"
+
+    hide Missy
+
+    $showplayer()
+
+    show kevin:
+        zoom 0.5
+        xalign 1.0 yalign 0.35
+        linear 0.5 xalign 0.7
+
+    Kevin "Do you want to participate?"
+
+    menu:
+        "No, I don't":
+            Mys "I prefer to stay in our school."
+            Kevin "Come on! It's gonna be fun. We can experience cultures from other places."
+            Mys "OK!"
+        "Yes, I want":
+            Mys "I would love to participate!"
+            Mys "It was always my dream to go to Von Neumann University (the best computer university in the world)."
+            Kevin "Then let's go!"
+
+
+
+    hide kevin
+    $hideplayer()
+
+    show Missy Normal at center:
+        xalign 0.8
+
+    Missy "I've already heard from some students said they really want to go."
+    Missy "But before you sign up, I would like to remind you about the safety about the placement."
+
+    $showplayer()
+
+
+    Mys "I have a questions."
+
+    show Missy Laugh at center:
+        xalign 0.8
+    Missy "I am happy to answer them."
+
+    menu question:
+        "what is a placement?":
+            $q1=True
+            Mys "What is a placement?"
+            Missy "Placement involves transferring your supervision to a third party placement provider who is usually said to be another organisation."
+            Missy "It is clear that exchange learning is a placement."
+            jump question
+
+        "What should I do to attend?":
+            $q2=True
+            Mys "What should I do to attend?"
+            Missy "Many of the school's activities are part of the placement."
+            Missy "If the activity is a placement, you must apply to the school and wait for its approval."
+            Mys "If the school doesn't approve me to attend, "
+            Mys "or if I don't submit an application, can I still attend?"
+            Missy "Then you can't take part, so please remember to always submit an application! "
+            Missy "So you need to be able to discern what activities are placements."
+
+            jump question
+
+        "What do I need to be aware of regarding the safety of placement?":
+            $q3=True
+            Mys "What do I need to be aware of regarding the safety of placement?"
+            Missy "The safety of our students is always our primary concern, even when your supervision is diverted."
+
+            Missy "There are three main stages of security in resettlement: before, during and after resettlement."
+            Missy "The main thing that schools may ask you to provide after placement is reports on standard templates or electronic questionnaires."
+            Missy "Or the school may ask you to share your experiences for the following year's students."
+            Missy "The focus of placement safety is pre and post placement."
+
+            Missy "Before placing, you first need to consider the practicality of the placement."
+            Missy "Practicality means do you need a visa or other travel document? "
+            Missy "Is your passport valid?"
+            Missy "Will you have enough money to cover the costs of your placement,"
+            Missy "and will you be able to access additional funds in case of an emergency? "
+            Missy "Considering all of these will help ensure that everything you need is in place before you leave our university."
+
+            Missy "You then need to consider the risks in 6 ways. "
+            Missy "Your work, your travel and transport, your location or area, your general and environmental health."
+            Missy "Your personal traits, characteristics, abilities and your insurance arrangements."
+
+            Missy "In placement, -you should be in regular contact with your workplace supervisor."
+            Missy "Communicate with your school on a regular basis."
+            Missy "You should also establish emergency contact arrangements."
+
+            jump question
+
+        "OK, I don't have question now." if q1 and q2 and q3:
+
+            Mys "OK, I don't have question now."
+
+            Missy "All right. Please come to me and apply now"
+
+            "After missy, you and kevin signd up for the event."
+
+            Kevin "[povname], I have some question about these."
+            Kevin "Can you help me?"
+            Mys "Sure!"
+            Missy "I am also here for you, Kevin. To prevent [povname] from giving you wrong answers."
 
 
 
@@ -715,13 +717,13 @@ label result:
         $isshake=False
 
     $timeout_label = False
-
+    hide kevin
 
     show Missy Normal at center:
         xalign 0.7
     Missy "OK, [povname], I've been watching your performance,"
     Missy "and rated your answers."
-
+    Missy "Actually it's a test."
     if score1>=83.4:
 
         Missy "Your score is [score1]. I think you are well aware of the risks that may arise."
@@ -744,6 +746,7 @@ label result:
         jump exam
 
 
+label placement:
     "Kevin finally changed the placement location because he want to accompany you."
     "You ended up at the Von Neumann University (the best computer university) with kecin, to study computing as interactive students."
 
@@ -819,7 +822,7 @@ label result:
 
         "Follow Kevin over the gate":
 
-
+            $ch1=False
 
             $showplayer()
 
@@ -923,7 +926,7 @@ label result:
     menu:
 
         "Shutdown":
-
+            $ch2=False
 
             Mys "Rebooting solves all problems!"
 
@@ -960,6 +963,7 @@ label result:
             Supervisor "I don't think so, they are very skilled."
             Supervisor "If there's any of your homework in there, I'm afraid you'll have to redo it."
             Mys "Oh my God. Help....."
+            "Finally, you didn't finish your homework."
         "Notify supervisor":
 
             $showplayer()
@@ -1000,6 +1004,7 @@ label result:
     scene bg view
     with dissolve
 
+label phonenumber:
     "After the viral crisis, you decide to go to the window to get some fresh air and relax your brain."
     "You open the tiktok at the window."
 
@@ -1089,7 +1094,7 @@ label result:
                 linear 0.5 xalign 0.7
 
 
-            Mys "If I update now, I still have to update it when I go back to Manchester. "
+            Mys "If I update now, I still have to update it when I go back to our university. "
             Mys "It's a hassle. I don't usually use my mobile number, I can just use email."
 
             Kevin "Well, it's your choice and I respect that."
@@ -1098,10 +1103,10 @@ label result:
             with dissolve
 
             "On this night"
-            "You hear a heavy knock on the door."
+            "Your mobile phone suddenly rings."
 
 
-            "Mys, Mys, wake up, something big is happening!"
+            "Mys, Mys, wake up, something important is happening!"
 
             $showplayer()
             Mys "Who's there?"
@@ -1140,43 +1145,88 @@ label result:
             Mys "I understand, missy, and I'm very sorry"
             Missy "Kevin told you, didn't he?"
 
-            Mys "I've got it. We'll go back tomorrow."
+            Mys "I've got it. I'll go back tomorrow."
 
-            "Finally you made it back to Manchester without incident."
+            "But, It's already too late."
+            "You were stuck in the area for six months."
+            "Eventually you are unable to complete your university studies."
+            "You have to delay your graduation by a year."
+            "Let's try again."
+            jump phonenumber
+
+
 
 
 
     scene bg graduation
     with dissolve
 
-    "Everything went well in your later university life."
-    "On graduation ceremony"
 
-    show Missy Laugh at center:
-        xalign 0.8
+    if ch1 and ch2:
 
-    $showplayer()
-    show kevin:
-        zoom 0.5
-        xalign 1.0 yalign 0.35
-        linear 0.5 xalign 0.7
+            "Everything went well in your later university life."
+            "Finally, you get a distinction degree."
+            "On graduation ceremony"
 
-    Missy "Congratulations on successfully completing your studies."
-    "At the same time, congratulations on your healthy and safe university experience."
-    "I wish you the best of luck in the future."
 
-    Kevin "Thank you Missy!"
-    Mys "Thanks!!"
+            show Missy Laugh at center:
+                xalign 0.8
 
-    "You ended up finishing your studies successfully and finding the right job. "
-    "Life has been on top ever since."
+            $showplayer()
+            show kevin:
+                zoom 0.5
+                xalign 1.0 yalign 0.35
+                linear 0.5 xalign 0.7
 
-    scene white
-    with fade
+            Missy "Congratulations on successfully completing your studies."
+            Missy "At the same time, congratulations on your healthy and safe university experience."
+            Missy "I wish you the best of luck in the future."
 
-    show text "The game is over! We hope you have learnt about health and safety at university."
-    pause
+            Kevin "Thank you Missy!"
+            Mys "Thanks!!"
 
+            "You ended up finishing your studies successfully and finding the right job. "
+            "Life has been on top ever since."
+
+            scene white
+            with fade
+
+            show text "The game is over! We hope you have learnt about health and safety at university."
+            pause
+
+
+    else:
+        "Everything went well in your later university life."
+        "But you didn't get a good grade during the placement"
+        "Finally, you get a pass degree."
+        "On graduation ceremony"
+
+
+        show Missy Laugh at center:
+            xalign 0.8
+
+        $showplayer()
+        show kevin:
+            zoom 0.5
+            xalign 1.0 yalign 0.35
+            linear 0.5 xalign 0.7
+
+        Missy "Congratulations on successfully completing your studies."
+        Missy "At the same time, congratulations on your healthy and safe university experience."
+        Missy "I wish you the best of luck in the future."
+
+        Kevin "Thank you Missy!"
+        Mys "Thanks!!"
+
+        "You ended up finishing your studies successfully."
+        "But it's difficult to find a job with a pass degree."
+        "Your life is full of uncertainty."
+
+        scene white
+        with fade
+
+        show text "The game is over! We hope you have learnt about health and safety at university."
+        pause
 
 
    #  With regard to the type of placement, a minigame can be made. placement in progress, security problems are found, contact the workplace supervisor. Discover that the student card is not working, contact the school, which finds that it needs to be updated. Mobile phone is broken, choose whether to update emergency contact details.
