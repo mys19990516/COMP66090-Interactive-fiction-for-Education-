@@ -787,7 +787,7 @@ label placement:
 
     menu:
 
-        "Contact Missy to resolve the problem":
+        "Don't know what happened, try contact Missy":
 
             $showplayer()
 
@@ -820,7 +820,7 @@ label placement:
 
             "After a while, your student card is ready for use."
 
-        "Follow Kevin over the gate":
+        "There's no one here, it should be fine to turn over the gate":
 
             $ch1=False
 
@@ -832,7 +832,7 @@ label placement:
                 linear 0.5 xalign 0.7
 
             Mys "I really want to go in and have a look. "
-            Mys "It shouldn't be a problem to climb over. "
+            Mys "It shouldn't be a problem to climb over. Nobody is watching."
             Mys "And we are university students. It's just that the student card is temporarily unavailable."
 
             Kevin "It's easy to turn over, come over here."
@@ -851,7 +851,9 @@ label placement:
                 linear 0.5 xalign 0.7
 
             Security "Stop! Who are you? Who gave you permission to go through the gates?"
-
+            Mys "What's going on, isn't it unguarded?"
+            Kevin "I don't know..."
+            Security "I saw you on the surveillance."
             $showplayer()
             Mys "We are exchange students of the university."
             Mys "we are not bad people and we have student cards."
@@ -893,6 +895,7 @@ label placement:
             "After paying the fine at the police station"
 
 
+
     scene bg university1
     with dissolve
     $showplayer()
@@ -920,15 +923,15 @@ label placement:
     Kevin "The word on the computer screen says not to turn it off."
     Mys "So maybe the hackers tricked us? "
     Mys "I don't think their technology is that great. He's scaring me."
-    Kevin "I thought it would be better to inform the supervisor in charge of us at the VON Neumann University."
-    Kevin "Missy said that if you have any problems during the placement, you should contact your local supervisor first."
+    #Kevin "I thought it would be better to inform the supervisor in charge of us at the VON Neumann University."
+    #Kevin "Missy said that if you have any problems during the placement, you should contact your local supervisor first."
 
     menu:
 
-        "Shutdown":
+        "Restart the computer should be ok.":
             $ch2=False
 
-            Mys "Rebooting solves all problems!"
+            Mys "Restart the computer solves all problems!"
 
             scene bg screenblack
             with dissolve
@@ -942,7 +945,8 @@ label placement:
 
             Mys "My god, the computer can't open! "
             Mys "What should I do?. All my data is in there."
-            Kevin "Notify the supervisor quickly!"
+            Kevin "We should notify the local supervisor quickly!"
+            Kevin "That's the right choice."
 
             scene bg desk
             with dissolve
@@ -964,7 +968,7 @@ label placement:
             Supervisor "If there's any of your homework in there, I'm afraid you'll have to redo it."
             Mys "Oh my God. Help....."
             "Finally, you didn't finish your homework."
-        "Notify supervisor":
+        "Ask local supervisor for help":
 
             $showplayer()
 
@@ -1001,10 +1005,12 @@ label placement:
             Supervisor "Please remember to let me know in the first instance if you have any questions."
             Mys "No problem."
 
+
+
+label phonenumber:
     scene bg view
     with dissolve
 
-label phonenumber:
     "After the viral crisis, you decide to go to the window to get some fresh air and relax your brain."
     "You open the tiktok at the window."
 
@@ -1047,10 +1053,9 @@ label phonenumber:
     Mys "OK, we're done shopping, let's go!"
     Kevin "Are you forgetting something?"
     Mys "What is it?"
-    Kevin "You should update your contact details at missy."
-    Kevin "You must also ensure that the university has up-to-date contact information for you on Campus Solutions. "
-    Kevin "You need to know how to contact you during your placement in the event of an emergency."
-    Kevin "You should also ensure that you check your email regularly while away from the University."
+    Kevin "You should update your contact details."
+    Kevin "Our university need to know how to contact you during your placement in the event of an emergency."
+
 
     Mys "But this is not our country's mobile phone card, I will replace it when I go back."
     Kevin "You should replace it immediately, it's very important!"
@@ -1059,7 +1064,7 @@ label phonenumber:
     $hideplayer()
     hide kevin
     menu:
-        "Update":
+        "Update. Contact information is important to others.":
 
             $showplayer()
 
@@ -1085,7 +1090,7 @@ label phonenumber:
             Mys "Thank you!"
             Missy "It's still very important to keep your contact details open!"
 
-        "Don't Update":
+        "There is no need to update contact information that will not be used in the future.":
 
             $showplayer()
             show kevin:
@@ -1140,8 +1145,11 @@ label phonenumber:
             Missy "Why don't you update your contact details. I'm going crazy."
 
             Mys "I don't think it's necessary to update this number, I won't use it when I go back."
+            
             Missy "This thought is wrong!"
             Missy "You should keep your contact details open at all times."
+            Missy "You must also ensure that the university has up-to-date contact information for you on Campus Solutions. "
+            Missy "You should also ensure that you check your email regularly while away from the University."
             Mys "I understand, missy, and I'm very sorry"
             Missy "Kevin told you, didn't he?"
 

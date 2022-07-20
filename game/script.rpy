@@ -165,13 +165,13 @@ label start:
     # show text "Welcome to Health and Safety Education Interactive Fiction"
     # pause
     #
-    # show text "Congratulations on your coming to the University of Manchester Computer Science!"
+    # show text "Congratulations on your coming to the University of Cityunited Computer Science!"
     # pause
-    # show text "The University of Manchester is a world-renowned university"
+    # show text "The University of Cityunited is a world-renowned university"
     # pause
-    # show text "Getting into the University of Manchester is proof that you are a very good student."
+    # show text "Getting into the University of Cityunited is proof that you are a very good student."
     # pause
-    # show text "As a world-renowned university, the University of Manchester takes the health and safety of its students very seriously"
+    # show text "As a world-renowned university, the University of Cityunited takes the health and safety of its students very seriously"
     # pause
     # show text "so teaching them something about health and safety is essential."
     # pause
@@ -179,10 +179,10 @@ label start:
     # pause
     # show text "explore the plot and learn about health and safety."
     # pause
-
+    #
     scene bg university
     with fade
-
+    #
     # python:
     #
     #    povname=renpy.input("First of all, please give your character a personalized name,")
@@ -204,7 +204,7 @@ label start:
     #
     # "[povname], choose an image you like next."
     menu:
-        #"[povname], choose an image you like next."
+        "[povname], choose an image you like next."
         "I want to choose a male.":
 
             call screen create_male
@@ -223,12 +223,12 @@ label start:
             "No worries. We created the character for you"
 
 
-    # "Your best friend, Kevin, has also been accepted to the University of Manchester"
+    # "Your best friend, Kevin, has also been accepted to the University of Cityunited"
     # show kevin:
     #     zoom 0.5
     #     xalign 1.0 yalign 0.35
     #     linear 0.5 xalign 0.9
-    # "You will spend your time with him at the University of Manchester!"
+    # "You will spend your time with him at the University of Cityunited!"
     #
     #
     # "On the first day of school, you attended a freshers' meeting with Kevin, where you met Missy, the head of your major."
@@ -243,7 +243,7 @@ label start:
     # # These display lines of dialogue.
     #
     #
-    # Missy "Hello everyone! Welcome to Computing at the University of Manchester, I am Missy, your cohort advisor."
+    # Missy "Hello everyone! Welcome to Computing at the University of Cityunited, I am Missy, your cohort advisor."
     # Missy "I will be responsible for your health and safety, behaviour and academic performance during your time at the University."
     # Missy "Please think of me as your friend! If you want to chat, I'm happy to listen and my office is always open for you!"
     #
@@ -271,7 +271,7 @@ label start:
     # Missy "In addition, universities often have a lot of expensive laboratory equipment and dangerous items (chemicals, biological viruses)"
     # Missy "which can often result in injuries and property damage in the event of a safety incident"
     # Missy "Our staffs and students often carry out an extremely wide range of activities, do you think it is possible to provide a risk-free environment?"
-    # Missy "I would like to pick one person to answer this question. ......mys,thanks for the compliment. You seem to be very active.Can you answer my question?"
+    # Missy "I would like to pick one person to answer this question. ......[povname],thanks for the compliment. You seem to be very active.Can you answer my question?"
     #
     # menu:
     #     "Impossible":
@@ -287,8 +287,9 @@ label start:
     # Missy "Before you go ahead, we will tell you the results of the risk assessment, give you information on what you can do to keep yourself and others safe."
     # Missy "Please make sure you read the information and make good use of it, as it can sometimes be crucial."
     # Missy "It is possible that we may have missed certain risks."
-    # Missy "So if you find a vulnerability, please do report it to me or to the security department"
-    # Missy "We would be very grateful for any suggestions you may have. This will help us to improve our measures to better protect students and staff."
+    # Missy "So if you find a vulnerability, please do report it to me or to the security department."
+    # Missy "We would be very grateful for any suggestions you may have. "
+    # Missy "This will help us to improve our measures to better protect students and staff."
     # Missy "Remember to always follow the usage instructions we have set out when carrying out activities."
     # Missy "These instructions are effective in protecting your life and property and that of others."
     # Missy "If you are injured in an accident, we have trained first aiders."
@@ -305,10 +306,10 @@ label start:
     #
     # $showplayer()
     #
-    # Mys "I have a problem!"
-    # Missy "Very good, mys, please ask your questions."
+    # Mys "I have a question!"
+    # Missy "Very good, [povname], please ask your questions."
     # Mys "What is the number to call for an ambulance, please?"
-    # Missy "I'm sorry I forgot that the University of Manchester is an internationally renowned university, "
+    # Missy "I'm sorry I forgot that the University of Cityunited is an internationally renowned university, "
     # Missy "so there will be a lot of foreign students coming to study. These foreign students are not very familiar with the UK."
     # Missy "In the UK, the number to call for an ambulance is 999."
     # Mys "Thank you!"
@@ -324,21 +325,21 @@ label start:
     #     xalign 1.0 yalign 0.42
     #     linear 0.5 xalign 0.7
     #
-    # Kevin "What did supervisor say just now, I was watching TikTok and didn't hear it, hahaha"
+    # Kevin "What did supervisor say just now, I was watching TikTok and didn't hear it, hahaha."
     #
     # Mys "She just spoke about health and safety, do you need me to repeat that for you?"
     #
-    # Kevin "No hahaha, I don't think I need to know that at university, it's safe, I'm gonna go back to the TikTok"
+    # Kevin "No hahaha, I don't think I need to know that at university, it's safe, I'm gonna go back to the TikTok."
     #
     # Mys "Well, I'll go on listening to Missy then, I think you'd better listen to it."
     #
-    # Kevin "It's ok, I think TikTok is more interesting than the supervisor's speech, hahaha"
+    # Kevin "It's ok, I think TikTok is more interesting than the supervisor's speech, hahaha."
     #
     # hide kevin
     #
     # $hideplayer()
     #
-    # "After the freshman meeting, your college life officially begins"
+    # "After the freshman meeting, your college life officially begins."
 
     jump first_chapter
 

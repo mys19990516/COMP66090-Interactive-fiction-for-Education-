@@ -40,8 +40,8 @@ init python:
 
 
 label chapter2:
-    $count=0
-
+#     $count=0
+#
 #
 #     $retrain=False
 #
@@ -136,373 +136,373 @@ label chapter2:
 #     Mys "[money]£ is a lot. "
 #     Mys "It is enough to live on for a month. "
 #     Mys "Thank you very much."
-label training:
-
-    scene white
-    with dissolve
-
-    show text "With the help of Missy, you have managed to get a job. "
-    pause
-
-    show text "The job involves cleaning the laboratory building for Manchester University."
-    pause
-
-    show text "The first thing you need to do is get the relevant training."
-    pause
-
-    scene bg classroom
-    with dissolve
-
-    show Missy Normal at center:
-        xalign 0.7
-
-    Missy "I'm here today to give a training session."
-    Missy "Cleaning in the laboratory is different from normal cleaning work. "
-
-    $showplayer()
-
-    Mys "what's the difference?"
-
-    $hideplayer()
-
-    Missy "When cleaning a laboratory, you not only have to clean the laboratory environment, "
-    Missy "but also clean the laboratory instruments and sort out the laboratory equipment. "
-    Missy "If the laboratory equipment becomes inoperable or causes a safety problem due to your improper handling, "
-    Missy "These are losses that the school cannot afford."
-    Missy "Therefore you need to be trained."
-    Missy "Now, I would like to tell you about the things to look out for when cleaning."
-    Missy "We have laboratories for various subjects in this building"
-
-    $showplayer()
-
-    Mys "How many laboratories do we have? "
-    Missy "Five!"
-    Mys "Got it."
-
-    $hideplayer()
-
-    Missy "These laboratories carry out important experiments in the next semester, "
-    Missy "which can affect the international reputation of our school. "
-    Missy "So your work is very demanding and important."
-
-    Missy "There are many sorts of signs in the laboratory."
-    Missy "First, you need to be clear about what these standards mean."
-
-    show red circul at center:
-        zoom 1.5
-        xalign 0.5 yalign 0.15
-    Missy "Circular signs with a red border and diagonal line are prohibition signs."
-    Missy "For this sign, it means you must not do something. ln this example, no smoking."
-    hide red circul
-
-    show red sign at center:
-        zoom 1.5
-        xalign 0.5 yalign 0.15
-    Missy "Red signs are also used for fire-related equipment such as fire fighting equipment."
-    hide red sign
-
-    show blue sign at center:
-        zoom 1.5
-        xalign 0.5 yalign 0.15
-    Missy "Blue signs are mandatory signs. "
-    Missy "This means that you MUST do something, such as wear hearing protection in this case."
-    hide blue sign
-
-    show yellow sign at center:
-        zoom 1.5
-        xalign 0.5 yalign 0.15
-    Missy "Yellow triangular signs are used to warn against hazards, such as electrical dangers as shown here."
-    hide yellow sign
-
-    show green sign at center:
-        zoom 1.5
-        xalign 0.5 yalign 0.15
-    Missy "Green signs indicate safe conditions such as emergency escape routes or where to get first aid."
-    hide green sign
-
-    Missy "Always remember to wear PPE when entering certain laboratories."
-    $showplayer()
-
-    Mys "But what is PPE? "
-    $hideplayer()
-
-    Missy "Sorry my fault!"
-    Missy "Personal protective equipment, or PPE, is designed to protect you from injury or illnesses caused by exposure to something harmful. "
-    Missy "lt should be supplied and used wherever there are risks that cannot be adequately controlled by other means."
-    Missy "PPE includes familiar items like safety glasses and gloves, "
-    Missy "but also things like face-shields, goggles, hard hats, safety shoes, hi-visibility vests, and earplugs."
-    Missy "lf you have been provided with PPE, ensure you know how to wear it correctly."
-    Missy "PPE has to be selected for the particular hazard. "
-    Missy "For example there are many different types of gloves, "
-    Missy "some protect against heat or cold, or sharp edges,"
-    Missy "while others are designed to protect the user from different types of chemical exposure."
-    Missy "Make sure you use the correct type."
-    Missy "One size does not fit everyone. For your PPE to be effective it must fit you properly."
-
-    $showplayer()
-
-    Mys "What happens if the PPE breaks down? "
-    $hideplayer()
-
-    Missy "lf your PPE is faulty or damaged, speak to me."
-    Missy "I will send it to you after the training."
-    Missy "PPE assigned for wear in laboratories and workshops should not be used at home."
-
-    $showplayer()
-
-    Mys "But these PPEs can be used in many places in daily life. "
-    Missy "Even so you are still forbidden to use it anywhere other than in the laboratory."
-    Mys "That's a shame."
-    $hideplayer()
-
-
-    Missy "Even in labs where you don't need to wear personal protective equipment, "
-    Missy "you should dress appropriately and wear the right clothes and shoes. "
-    Missy "For example, tie your long hair at the back of your head and keep it inside your clothes. "
-    Missy "If headwear must be worn, it must be secured and fit snugly. "
-    Missy "Loose clothing can be dangerous when near certain machines, so try to choose tight-fitting clothes. "
-    Missy "Open-toed sandals must be prohibited."
-    Missy "This is because any chemical spills or heavy objects dropped on the toes can cause serious injury!"
-
-
-    Missy "Next, I'll talk about what to look for in a specific lab."
-
-    if isshow:
-
-        menu Labb:
-            "Electrical Lab":
-                $Lab1=True
-
-                jump ElectricalLab
-
-            "Chemistry Lab":
-                $Lab2=True
-
-                jump ChemistryLab
-
-            "Mechanical Lab":
-                $Lab3=True
-
-                jump MechanicalLab
-
-            "Bio Lab":
-                $Lab4=True
-
-                jump BioLab
-
-            "Nuclear Lab":
-                $Lab5=True
-                jump NuclearLab
-
-            "Finish Lab" if Lab1 and Lab2 and Lab4 and Lab4 and Lab5:
-                $isshow=False
-                jump waste
-
-
-
-label ElectricalLab:
-
-    if retrain1:
-
-        scene bg office
-        with fade
-
-        show Missy Normal at center:
-            xalign 0.7
-
-    Missy "Firstly, the electrical lab."
-    Missy "When handling any electrical equipment, "
-    Missy "you must ensure that cables do not create a tripping hazard or drag across sinks or heating unit equipment."
-    Missy "Do not overload plug sockets or plug one extension lead into another. "
-    Missy "Do not place items that may leak or spill on top of the equipment."
-    Missy "Do not use the equipment unless you have been shown how to use it properly. "
-    Missy "If the equipment is labelled as faulty, please never touch it. "
-
-    show labdonotuse at center:
-        zoom 1.5
-        xalign 0.5 yalign 0.15
-
-    Missy "Like this sign."
-
-    hide labdonotuse
-
-    Missy "The school will have professional maintenance staff to deal with it."
-    if Lab1 and isshow:
-        jump Labb
-
-    if retrain1:
-
-        jump choose1
-
-label ChemistryLab:
-
-    if retrain2:
-
-        scene bg office
-        with fade
-
-        show Missy Normal at center:
-            xalign 0.7
-
-    Missy "Next, chemistry lab."
-    Missy "Avoiding chemicals entering the body in the chemistry lab. "
-    Missy "Chemicals can enter the body in four main ways. "
-    Missy "lngestion, by swallowing and transferring chemicals from hand to mouth when eating or smoking without first washing your hands."
-    Missy "lnhalation, by breathing in gases, fumes, mist or dusts. "
-    Missy "Once breathed insome substances can attack the nose, throat or lungs,"
-    Missy "while others get into the bodythrough the lungs and harm other parts, e.g.the liver."
-    Missy "lnjection, by skin puncture."
-    Missy "Hypodermic needle injuries can involveinfectious agents or very harmful substances and care should be taken when using them."
-    Missy "Direct contact with the skin. "
-    Missy "Some substances damage skin, while others passthrough it and damage other parts of the body."
-    Missy "Some vapours, gases and dusts are irritating to eyes."
-    Missy "Corrosive liquid splashes can permanently damage eyesight."
-    Missy "The safety signs associated with chemical hazards are diamond in shape with a red border."
-    Missy "Here are some of the common ones."
-
-    show chemistrysign at center:
-        zoom 1.5
-        xalign 0.5 yalign 0.15
-
-    Missy "Please remember them."
-
-    hide chemistrysign
-
-    if Lab2 and isshow:
-        jump Labb
-
-    if retrain2:
-
-        jump choose2
-
-label MechanicalLab:
-
-    if retrain3:
-
-        scene bg office
-        with fade
-
-        show Missy Normal at center:
-            xalign 0.7
-
-    Missy "In a mechanical laboratory, you should avoid hurting the machine, rr avoid the machine hurting you."
-
-    Missy "If used incorrectly, the machine or equipment may cause you injury by touching or entangling any moving parts;"
-    Missy "crushed between moving parts and fixed structures -for example -wall;"
-    Missy "hit by objects or materials ejected by machines."
-
-    show machsign at center:
-        zoom 1.0
-        xalign 0.5 yalign 0.15
-
-    Missy "Some typical yellow triangular warning signs of mechanical hazards are shown."
-    Missy "To reduce the risk of injury, you must ensure that you are supervised and follow any instructions given. "
-
-    hide machsign
-
-    Missy "Wear any personal protective equipment provided for your use. "
-    Missy "Know the location of the emergency stop button on workshop equipment. You may need it!"
-    Missy "Make sure any loose clothing and anything that might get tangled or caught is securely fastened before you start work."
-    Missy "Never attempt to bypass or remove any guards or interlocks - they are there to protect you."
-    if Lab3 and isshow:
-        jump Labb
-
-    if retrain3:
-
-        jump choose3
-
-label BioLab:
-
-    if retrain4:
-
-        scene bg office
-        with fade
-
-        show Missy Normal at center:
-            xalign 0.7
-
-    Missy "Next up is the bio lab. "
-    Missy "When you enter the lab, check for warnings firstly, Biological hazards are identified by this warning sign."
-
-    show biosign at center:
-        zoom 1.5
-        xalign 0.5 yalign 0.15
-
-    Missy "To reduce the risk of becoming infected, here are some do's and don'ts."
-
-    hide biosign
-
-    Missy "Do not do anything to increase the risk of passing hazardous materials from your hands into your mouth. "
-    Missy "This is why eating, drinking, applying cosmetics and storing food in labs are all prohibited."
-    Missy "Never pipette by mouth."
-    Missy "Do minimize aerosols and splashes, and deal with spills immediately."
-    Missy "Do disinfect working surfaces after use."
-    Missy "Do wash your hands before leavingthe work area."
-    Missy "Wear your lab coat only in the lab."
-    Missy "Keep your work area clean and tidy."
-    Missy "Keep writing and experimental areas separate."
-    if Lab4 and isshow:
-        jump Labb
-
-    if retrain4:
-
-        jump choose4
-
-label NuclearLab:
-
-    if retrain5:
-
-        scene bg office
-        with fade
-
-        show Missy Normal at center:
-            xalign 0.7
-
-    Missy "Finally, there is the nuclear laboratory. "
-    Missy "Different types of ionising and non-ionising radiation produce different types of damage."
-    Missy "Some not detected by our senses, so you may not know they are present or if you are being effected."
-    Missy "When working with any type of radiation source you must follow all instructions,"
-    Missy "wear PPE as required,"
-    Missy "do not eat, drink, or chew gum in any area designated for work with radioactive materials."
-    Missy "Here are some warning signs."
-
-    show nuclearsign at center:
-        zoom 1.0
-        xalign 0.5 yalign 0.15
-
-    Missy "Don't forget them."
-
-    hide nuclearsign
-    if Lab5 and isshow:
-        jump Labb
-
-    if retrain5:
-
-        jump choose5
-
-label waste:
-    Missy "Please dispose of the waste generated in the laboratory correctly."
-    Missy "Different laboratories or workshops have different waste disposal systems. "
-    Missy "Please ensure that waste is disposed of in the correct waste disposal system. "
-    Missy "A special reminder is to never put sharp objects such as glass or needles into plastic bags. "
-    Missy "This is because they may puncture the plastic bags."
-
-label collectPPE:
-    Missy "That's what I'm trying to say. "
-    Missy "I know there are a lot of points to be aware of, "
-    Missy "but that's why you are paid very well. "
-    Missy "If something goes wrong on the job, all the damage will be paid for by you. "
-    Missy "And you will lose your well-paid job. "
-    Missy "Please be careful when working!"
-
-    $showplayer()
-    Mys "It sounds like such a hassle, "
-    Mys "but I'm willing to spend the time and experience to clean it for my living expenses."
-
-    Missy "Now, Please come to me to collect your PPE."
-
-    Mys "Wow, this PPE looks so advanced."
-    Mys "I'll keep it well."
+# label training:
+#
+#     scene white
+#     with dissolve
+#
+#     show text "With the help of Missy, you have managed to get a job. "
+#     pause
+#
+#     show text "The job involves cleaning the laboratory building for our University."
+#     pause
+#
+#     show text "The first thing you need to do is get the relevant training."
+#     pause
+#
+#     scene bg classroom
+#     with dissolve
+#
+#     show Missy Normal at center:
+#         xalign 0.7
+#
+#     Missy "I'm here today to give a training session."
+#     Missy "Cleaning in the laboratory is different from normal cleaning work. "
+#
+#     $showplayer()
+#
+#     Mys "what's the difference?"
+#
+#     $hideplayer()
+#
+#     Missy "When cleaning a laboratory, you not only have to clean the laboratory environment, "
+#     Missy "but also clean the laboratory instruments and sort out the laboratory equipment. "
+#     Missy "If the laboratory equipment becomes inoperable or causes a safety problem due to your improper handling, "
+#     Missy "These are losses that the school cannot afford."
+#     Missy "Therefore you need to be trained."
+#     Missy "Now, I would like to tell you about the things to look out for when cleaning."
+#     Missy "We have laboratories for various subjects in this building"
+#
+#     $showplayer()
+#
+#     Mys "How many laboratories do we have? "
+#     Missy "Five!"
+#     Mys "Got it."
+#
+#     $hideplayer()
+#
+#     Missy "These laboratories carry out important experiments in the next semester, "
+#     Missy "which can affect the international reputation of our school. "
+#     Missy "So your work is very demanding and important."
+#
+#     Missy "There are many sorts of signs in the laboratory."
+#     Missy "First, you need to be clear about what these standards mean."
+#
+#     show red circul at center:
+#         zoom 1.5
+#         xalign 0.5 yalign 0.15
+#     Missy "Circular signs with a red border and diagonal line are prohibition signs."
+#     Missy "For this sign, it means you must not do something. ln this example, no smoking."
+#     hide red circul
+#
+#     show red sign at center:
+#         zoom 1.5
+#         xalign 0.5 yalign 0.15
+#     Missy "Red signs are also used for fire-related equipment such as fire fighting equipment."
+#     hide red sign
+#
+#     show blue sign at center:
+#         zoom 1.5
+#         xalign 0.5 yalign 0.15
+#     Missy "Blue signs are mandatory signs. "
+#     Missy "This means that you MUST do something, such as wear hearing protection in this case."
+#     hide blue sign
+#
+#     show yellow sign at center:
+#         zoom 1.5
+#         xalign 0.5 yalign 0.15
+#     Missy "Yellow triangular signs are used to warn against hazards, such as electrical dangers as shown here."
+#     hide yellow sign
+#
+#     show green sign at center:
+#         zoom 1.5
+#         xalign 0.5 yalign 0.15
+#     Missy "Green signs indicate safe conditions such as emergency escape routes or where to get first aid."
+#     hide green sign
+#
+#     Missy "Always remember to wear PPE when entering certain laboratories."
+#     $showplayer()
+#
+#     Mys "But what is PPE? "
+#     $hideplayer()
+#
+#     Missy "Sorry my fault!"
+#     Missy "Personal protective equipment, or PPE, is designed to protect you from injury or illnesses caused by exposure to something harmful. "
+#     Missy "lt should be supplied and used wherever there are risks that cannot be adequately controlled by other means."
+#     Missy "PPE includes familiar items like safety glasses and gloves, "
+#     Missy "but also things like face-shields, goggles, hard hats, safety shoes, hi-visibility vests, and earplugs."
+#     Missy "lf you have been provided with PPE, ensure you know how to wear it correctly."
+#     Missy "PPE has to be selected for the particular hazard. "
+#     Missy "For example there are many different types of gloves, "
+#     Missy "some protect against heat or cold, or sharp edges,"
+#     Missy "while others are designed to protect the user from different types of chemical exposure."
+#     Missy "Make sure you use the correct type."
+#     Missy "One size does not fit everyone. For your PPE to be effective it must fit you properly."
+#
+#     $showplayer()
+#
+#     Mys "What happens if the PPE breaks down? "
+#     $hideplayer()
+#
+#     Missy "lf your PPE is faulty or damaged, speak to me."
+#     Missy "I will send it to you after the training."
+#     Missy "PPE assigned for wear in laboratories and workshops should not be used at home."
+#
+#     $showplayer()
+#
+#     Mys "But these PPEs can be used in many places in daily life. "
+#     Missy "Even so you are still forbidden to use it anywhere other than in the laboratory."
+#     Mys "That's a shame."
+#     $hideplayer()
+#
+#
+#     Missy "Even in labs where you don't need to wear personal protective equipment, "
+#     Missy "you should dress appropriately and wear the right clothes and shoes. "
+#     Missy "For example, tie your long hair at the back of your head and keep it inside your clothes. "
+#     Missy "If headwear must be worn, it must be secured and fit snugly. "
+#     Missy "Loose clothing can be dangerous when near certain machines, so try to choose tight-fitting clothes. "
+#     Missy "Open-toed sandals must be prohibited."
+#     Missy "This is because any chemical spills or heavy objects dropped on the toes can cause serious injury!"
+#
+#
+#     Missy "Next, I'll talk about what to look for in a specific lab."
+#
+#     if isshow:
+#
+#         menu Labb:
+#             "Electrical Lab":
+#                 $Lab1=True
+#
+#                 jump ElectricalLab
+#
+#             "Chemistry Lab":
+#                 $Lab2=True
+#
+#                 jump ChemistryLab
+#
+#             "Mechanical Lab":
+#                 $Lab3=True
+#
+#                 jump MechanicalLab
+#
+#             "Bio Lab":
+#                 $Lab4=True
+#
+#                 jump BioLab
+#
+#             "Nuclear Lab":
+#                 $Lab5=True
+#                 jump NuclearLab
+#
+#             "Finish Lab" if Lab1 and Lab2 and Lab4 and Lab4 and Lab5:
+#                 $isshow=False
+#                 jump waste
+#
+#
+#
+# label ElectricalLab:
+#
+#     if retrain1:
+#
+#         scene bg office
+#         with fade
+#
+#         show Missy Normal at center:
+#             xalign 0.7
+#
+#     Missy "Firstly, the electrical lab."
+#     Missy "When handling any electrical equipment, "
+#     Missy "you must ensure that cables do not create a tripping hazard or drag across sinks or heating unit equipment."
+#     Missy "Do not overload plug sockets or plug one extension lead into another. "
+#     Missy "Do not place items that may leak or spill on top of the equipment."
+#     Missy "Do not use the equipment unless you have been shown how to use it properly. "
+#     Missy "If the equipment is labelled as faulty, please never touch it. "
+#
+#     show labdonotuse at center:
+#         zoom 1.5
+#         xalign 0.5 yalign 0.15
+#
+#     Missy "Like this sign."
+#
+#     hide labdonotuse
+#
+#     Missy "The school will have professional maintenance staff to deal with it."
+#     if Lab1 and isshow:
+#         jump Labb
+#
+#     if retrain1:
+#
+#         jump choose1
+#
+# label ChemistryLab:
+#
+#     if retrain2:
+#
+#         scene bg office
+#         with fade
+#
+#         show Missy Normal at center:
+#             xalign 0.7
+#
+#     Missy "Next, chemistry lab."
+#     Missy "Avoiding chemicals entering the body in the chemistry lab. "
+#     Missy "Chemicals can enter the body in four main ways. "
+#     Missy "lngestion, by swallowing and transferring chemicals from hand to mouth when eating or smoking without first washing your hands."
+#     Missy "lnhalation, by breathing in gases, fumes, mist or dusts. "
+#     Missy "Once breathed insome substances can attack the nose, throat or lungs,"
+#     Missy "while others get into the bodythrough the lungs and harm other parts, e.g.the liver."
+#     Missy "lnjection, by skin puncture."
+#     Missy "Hypodermic needle injuries can involveinfectious agents or very harmful substances and care should be taken when using them."
+#     Missy "Direct contact with the skin. "
+#     Missy "Some substances damage skin, while others passthrough it and damage other parts of the body."
+#     Missy "Some vapours, gases and dusts are irritating to eyes."
+#     Missy "Corrosive liquid splashes can permanently damage eyesight."
+#     Missy "The safety signs associated with chemical hazards are diamond in shape with a red border."
+#     Missy "Here are some of the common ones."
+#
+#     show chemistrysign at center:
+#         zoom 1.5
+#         xalign 0.5 yalign 0.15
+#
+#     Missy "Please remember them."
+#
+#     hide chemistrysign
+#
+#     if Lab2 and isshow:
+#         jump Labb
+#
+#     if retrain2:
+#
+#         jump choose2
+#
+# label MechanicalLab:
+#
+#     if retrain3:
+#
+#         scene bg office
+#         with fade
+#
+#         show Missy Normal at center:
+#             xalign 0.7
+#
+#     Missy "In a mechanical laboratory, you should avoid hurting the machine, rr avoid the machine hurting you."
+#
+#     Missy "If used incorrectly, the machine or equipment may cause you injury by touching or entangling any moving parts;"
+#     Missy "crushed between moving parts and fixed structures -for example -wall;"
+#     Missy "hit by objects or materials ejected by machines."
+#
+#     show machsign at center:
+#         zoom 1.0
+#         xalign 0.5 yalign 0.15
+#
+#     Missy "Some typical yellow triangular warning signs of mechanical hazards are shown."
+#     Missy "To reduce the risk of injury, you must ensure that you are supervised and follow any instructions given. "
+#
+#     hide machsign
+#
+#     Missy "Wear any personal protective equipment provided for your use. "
+#     Missy "Know the location of the emergency stop button on workshop equipment. You may need it!"
+#     Missy "Make sure any loose clothing and anything that might get tangled or caught is securely fastened before you start work."
+#     Missy "Never attempt to bypass or remove any guards or interlocks - they are there to protect you."
+#     if Lab3 and isshow:
+#         jump Labb
+#
+#     if retrain3:
+#
+#         jump choose3
+#
+# label BioLab:
+#
+#     if retrain4:
+#
+#         scene bg office
+#         with fade
+#
+#         show Missy Normal at center:
+#             xalign 0.7
+#
+#     Missy "Next up is the bio lab. "
+#     Missy "When you enter the lab, check for warnings firstly, Biological hazards are identified by this warning sign."
+#
+#     show biosign at center:
+#         zoom 1.5
+#         xalign 0.5 yalign 0.15
+#
+#     Missy "To reduce the risk of becoming infected, here are some do's and don'ts."
+#
+#     hide biosign
+#
+#     Missy "Do not do anything to increase the risk of passing hazardous materials from your hands into your mouth. "
+#     Missy "This is why eating, drinking, applying cosmetics and storing food in labs are all prohibited."
+#     Missy "Never pipette by mouth."
+#     Missy "Do minimize aerosols and splashes, and deal with spills immediately."
+#     Missy "Do disinfect working surfaces after use."
+#     Missy "Do wash your hands before leavingthe work area."
+#     Missy "Wear your lab coat only in the lab."
+#     Missy "Keep your work area clean and tidy."
+#     Missy "Keep writing and experimental areas separate."
+#     if Lab4 and isshow:
+#         jump Labb
+#
+#     if retrain4:
+#
+#         jump choose4
+#
+# label NuclearLab:
+#
+#     if retrain5:
+#
+#         scene bg office
+#         with fade
+#
+#         show Missy Normal at center:
+#             xalign 0.7
+#
+#     Missy "Finally, there is the nuclear laboratory. "
+#     Missy "Different types of ionising and non-ionising radiation produce different types of damage."
+#     Missy "Some not detected by our senses, so you may not know they are present or if you are being effected."
+#     Missy "When working with any type of radiation source you must follow all instructions,"
+#     Missy "wear PPE as required,"
+#     Missy "do not eat, drink, or chew gum in any area designated for work with radioactive materials."
+#     Missy "Here are some warning signs."
+#
+#     show nuclearsign at center:
+#         zoom 1.0
+#         xalign 0.5 yalign 0.15
+#
+#     Missy "Don't forget them."
+#
+#     hide nuclearsign
+#     if Lab5 and isshow:
+#         jump Labb
+#
+#     if retrain5:
+#
+#         jump choose5
+#
+# label waste:
+#     Missy "Please dispose of the waste generated in the laboratory correctly."
+#     Missy "Different laboratories or workshops have different waste disposal systems. "
+#     Missy "Please ensure that waste is disposed of in the correct waste disposal system. "
+#     Missy "A special reminder is to never put sharp objects such as glass or needles into plastic bags. "
+#     Missy "This is because they may puncture the plastic bags."
+#
+# label collectPPE:
+#     Missy "That's what I'm trying to say. "
+#     Missy "I know there are a lot of points to be aware of, "
+#     Missy "but that's why you are paid very well. "
+#     Missy "If something goes wrong on the job, all the damage will be paid for by you. "
+#     Missy "And you will lose your well-paid job. "
+#     Missy "Please be careful when working!"
+#
+#     $showplayer()
+#     Mys "It sounds like such a hassle, "
+#     Mys "but I'm willing to spend the time and experience to clean it for my living expenses."
+#
+#     Missy "Now, Please come to me to collect your PPE."
+#
+#     Mys "Wow, this PPE looks so advanced."
+#     Mys "I'll keep it well."
 #
 # label Evening:
 #
@@ -1011,18 +1011,20 @@ label collectPPE:
 #         Missy "You didn't make many mistakes. Try better next time."
 #         Missy "But this work does not allow you to make any mistakes."
 #         Missy "I've decided to give you another job. "
-#         menu:
+#         menu aks:
 #             "Inquire about job content":
 #                 $qq1=True
 #                 Mys "What is this job?"
 #                 Missy "As our university is an internationally renowned school, many letters are collected every day."
 #                 Missy "Your task will be to answer them. "
+#                 jump aks
 #             "Ask about salary":
 #                 $qq2=True
 #                 Mys "What is the salary of this job?"
 #                 Missy "This job allows you to make some mistakes, but the pay is much lower. "
 #                 Missy "It's about £1,500 a month."
-#             "No more question" if q1 and q2 :
+#                 jump aks
+#             "No more question" if qq1 and qq2 :
 #                 Mys "Although reluctantly, I have to accept it."
 #                 "You can't buy expensive food and clothes because of the low salary. "
 #                 "During summer vacation, your quality of life is not high."

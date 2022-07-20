@@ -1,9 +1,9 @@
-# init:
-#     default close_firedoor = False
-#     default HaveFire=False
-#
+init:
+    default close_firedoor = False
+    default HaveFire=False
+
 label first_chapter:
-#
+
 #     scene white
 #     show text "Chapter 1"
 #     with fade
@@ -280,7 +280,7 @@ label first_chapter:
 #     $hideplayer()
 #
 #     menu:
-#         "Stop him":
+#         "Just in case, i should stop him":
 #
 #             show kevin:
 #                 zoom 0.5
@@ -330,7 +330,7 @@ label first_chapter:
 #                     $HaveFire=True
 #                     jump fire
 #
-#         "Let Kevin handle it by himself":
+#         "I've warned him, It's better to let him handle it himself.":
 #                 show kevin:
 #                     zoom 0.5
 #                     xalign 0.7 yalign 0.35
@@ -383,7 +383,7 @@ label first_chapter:
 #
 #
 #         menu:
-#             "Close the fire door":
+#             "The fire door needs to be closed ":
 #
 #                 $showplayer()
 #
@@ -399,7 +399,7 @@ label first_chapter:
 #
 #                 $ close_firedoor = True
 #
-#             "Run for your life":
+#             "The fire is spreading too fast, forget about the door":
 #
 #                 $ close_firedoor = False
 #
@@ -413,7 +413,7 @@ label first_chapter:
 #         "You run out of the dormitory, then you arrive at the stairway and spot the green runner sign."
 #
 #         menu:
-#             "Follow the green runner sign":
+#             "Follow the green runner sign is good for me":
 #
 #                 $showplayer()
 #
@@ -422,7 +422,7 @@ label first_chapter:
 #
 #                 $ use_stair=True
 #
-#             "Use the lift":
+#             "Lift is fast, I need to go downstairs as fast as possible":
 #
 #                 $ use_stair=False
 #
@@ -502,7 +502,7 @@ label first_chapter:
 #         $hideplayer()
 #
 #         menu:
-#             "Close the fire door":
+#             "The fire door needs to be closed ":
 #
 #                 $ close_firedoor = False
 #
@@ -518,7 +518,7 @@ label first_chapter:
 #
 #                 $ close_firedoor = True
 #
-#             "Run for your life":
+#            "The fire is spreading too fast, forget about the door":
 #
 #                 Mys "I don't have time to do this! I'm young, I don't want to die!"
 #
@@ -528,7 +528,7 @@ label first_chapter:
 #         "You run out of the dormitory, then you arrive at the stairway and spot the green runner sign."
 #
 #         menu:
-#             "Follow the green runner sign":
+#             "Follow the green runner sign is good for me":
 #
 #                 $showplayer()
 #
@@ -536,7 +536,7 @@ label first_chapter:
 #                 Mys "It usually points to the nearest exit, it is suitable for use in emergency situations."
 #
 #                 $ use_stair=True
-#             "Use the lift":
+#              "Lift is fast, I need to go downstairs as fast as possible":
 #
 #                 $ use_stair=False
 #
@@ -622,7 +622,7 @@ label first_chapter:
 #     scene bg library
 #     with dissolve
 #
-#     "After a morning of learning, you are a little hungry"
+#     "After a morning of learning, you are a little hungry."
 #
 #
 #     $showplayer()
@@ -633,7 +633,7 @@ label first_chapter:
 #         linear 0.5 xalign 0.7
 #
 #     Kevin "I'm a bit hungry. My goodness, it's already 12:30!! "
-#     Kevin "Mys do you want to go and get something to eat?"
+#     Kevin "[povname] do you want to go and get something to eat?"
 #     Mys "I'm a bit hungry too, so let's go and get something to eat."
 #
 #     scene computer
@@ -657,7 +657,7 @@ label first_chapter:
 #     $hideplayer()
 #
 #     menu:
-#         "putting away your personal belongings":
+#         "Putting away your personal belongings is better":
 #
 #             $showplayer()
 #
@@ -711,7 +711,7 @@ label first_chapter:
 #             Mys "or I may lost it too."
 #             Kevin "That's true."
 #
-#         "Ignore Kevin's advice":
+#         "I'll be back in just a few minutes, no need to be so nervous":
 #
 #             $showplayer()
 #
@@ -746,6 +746,7 @@ label first_chapter:
 #             Mys "but I have to do my homework again!"
 #             Mys "It's totally too late! I don't have enough time!"
 #
+#             Kevin "You should know that your property is not safe even in the school library."
 #             "In the end, you did not complete the assignment and did not pass this course."
 #             "Start the selection again, this time with care."
 #
@@ -820,7 +821,7 @@ label first_chapter:
 #     $hideplayer()
 #
 #     menu:
-#         "leave bags and other items on the path":
+#         "leave bags and other items on the path, they are big enough that people can see them":
 #
 #             $showplayer()
 #
@@ -834,11 +835,11 @@ label first_chapter:
 #             "However, your bag trip over an elderly member of staff, causing her to land on her head. "
 #             "she is hospitalised and all your family's money go to compensate her. "
 #             "You have no money to continue with your studies"
-#             " Finally, you drop out of Manchester University. "
+#             " Finally, you drop out of your University. "
 #             "Start your choice again, this time with care."
 #             jump library2
 #
-#         "remove you items":
+#         "remove you items, they will cause inconvenience to people":
 #
 #             $showplayer()
 #
@@ -852,5 +853,5 @@ label first_chapter:
 #             "causing her to land on her head and she was admitted to hospital."
 #             Mys "Gosh, I'm glad I took kevin's advice."
 #     "In the end, you successfully complete the assignment with a good grade."
-#
+
     jump chapter2
