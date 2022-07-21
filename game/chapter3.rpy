@@ -52,10 +52,7 @@ label chapter3:
 
     $showplayer()
 
-    show kevin:
-        zoom 0.5
-        xalign 1.0 yalign 0.35
-        linear 0.5 xalign 0.7
+    $showkevin()
 
     Kevin "Do you want to participate?"
 
@@ -71,7 +68,7 @@ label chapter3:
 
 
 
-    hide kevin
+    $hidekevin()
     $hideplayer()
 
     show Missy Normal at center:
@@ -143,6 +140,8 @@ label chapter3:
             Missy "All right. Please come to me and apply now"
 
             "After missy, you and kevin signd up for the event."
+            hide Missy
+            $showkevin()
 
             Kevin "[povname], I have some question about these."
             Kevin "Can you help me?"
@@ -155,10 +154,7 @@ label exam:
     scene bg exam
     with fade
 
-    show kevin:
-        zoom 0.5
-        xalign 1.0 yalign 0.35
-        linear 0.5 xalign 0.9
+    $showkevin()
 
     $timeout_label = True
     $showscore=True
@@ -717,7 +713,7 @@ label result:
         $isshake=False
 
     $timeout_label = False
-    hide kevin
+    $hidekevin()
 
     show Missy Normal at center:
         xalign 0.7
@@ -748,7 +744,7 @@ label result:
 
 label placement:
     "Kevin finally changed the placement location because he want to accompany you."
-    "You ended up at the Von Neumann University (the best computer university) with kecin, to study computing as interactive students."
+    "You ended up at the Von Neumann University (the best computer university) with [friend], to study computing as interactive students."
 
     scene white
     with fade
@@ -761,10 +757,7 @@ label placement:
 
     $showplayer()
 
-    show kevin:
-        zoom 0.5
-        xalign 1.0 yalign 0.35
-        linear 0.5 xalign 0.7
+    $showkevin()
 
     Mys "Wow, is this the best computer university in the world? it's really great!"
     Kevin "I can't wait to get in!"
@@ -783,7 +776,7 @@ label placement:
     Kevin "and this gate is not high, we can turn over. And there was no supervision."
 
     $hideplayer()
-    hide kevin
+    $hidekevin()
 
     menu:
 
@@ -791,10 +784,7 @@ label placement:
 
             $showplayer()
 
-            show kevin:
-                zoom 0.5
-                xalign 1.0 yalign 0.35
-                linear 0.5 xalign 0.7
+            $showkevin()
 
             Kevin "Missy has said to contact our school if you have a problem outside. "
             Mys "Let's contact her first."
@@ -826,10 +816,7 @@ label placement:
 
             $showplayer()
 
-            show kevin:
-                zoom 0.5
-                xalign 1.0 yalign 0.35
-                linear 0.5 xalign 0.7
+            $showkevin()
 
             Mys "I really want to go in and have a look. "
             Mys "It shouldn't be a problem to climb over. Nobody is watching."
@@ -900,11 +887,7 @@ label placement:
     with dissolve
     $showplayer()
 
-    show kevin:
-        zoom 0.5
-        xalign 1.0 yalign 0.35
-        linear 0.5 xalign 0.7
-
+    $showkevin()
     Mys "We're in, finally."
     Kevin "Yes, we must have a good tour of the campus."
 
@@ -938,10 +921,7 @@ label placement:
 
             $showplayer()
 
-            show kevin:
-                zoom 0.5
-                xalign 1.0 yalign 0.35
-                linear 0.5 xalign 0.7
+            $showkevin()
 
             Mys "My god, the computer can't open! "
             Mys "What should I do?. All my data is in there."
@@ -972,10 +952,7 @@ label placement:
 
             $showplayer()
 
-            show kevin:
-                zoom 0.5
-                xalign 1.0 yalign 0.35
-                linear 0.5 xalign 0.7
+            $showkevin()
 
             Mys "It makes sense, as the best computer university in the world, their computers must have excellent firewalls."
             Mys "If hackers can break it, they must be very skilled."
@@ -1025,10 +1002,7 @@ label phonenumber:
     with dissolve
 
     $showplayer()
-    show kevin:
-        zoom 0.5
-        xalign 1.0 yalign 0.35
-        linear 0.5 xalign 0.7
+    $showkevin()
 
     Mys "It's finished, It's completely broken."
     Kevin "Looks like you need a new phone."
@@ -1039,10 +1013,7 @@ label phonenumber:
     with dissolve
 
     $showplayer()
-    show kevin:
-        zoom 0.5
-        xalign 1.0 yalign 0.35
-        linear 0.5 xalign 0.7
+    $showkevin()
 
     "Electronic Market"
     Mys "Ok, this is the phone I want."
@@ -1062,7 +1033,7 @@ label phonenumber:
     Mys "I really don't think there's anything wrong with changing to a fixed mobile number when I go back. This one is only temporary."
 
     $hideplayer()
-    hide kevin
+    $hidekevin()
     menu:
         "Update. Contact information is important to others.":
 
@@ -1093,10 +1064,7 @@ label phonenumber:
         "There is no need to update contact information that will not be used in the future.":
 
             $showplayer()
-            show kevin:
-                zoom 0.5
-                xalign 1.0 yalign 0.35
-                linear 0.5 xalign 0.7
+            $showkevin()
 
 
             Mys "If I update now, I still have to update it when I go back to our university. "
@@ -1118,11 +1086,7 @@ label phonenumber:
 
             Kevin "I am Kevin."
 
-            show kevin:
-                zoom 0.5
-                xalign 1.0 yalign 0.35
-
-                linear 0.5 xalign 0.7
+            $showkevin()
             Mys "I'm so sleepy, it's 2am. What's going on."
             Kevin "I just got a call from Missy."
             Kevin "Missy says we have a local variant of the COVID-19!"
@@ -1134,7 +1098,7 @@ label phonenumber:
             Mys "OK!"
 
             "After the update"
-            hide kevin
+            $hidekevin()
 
             show Missy Rage at center:
 
@@ -1145,7 +1109,7 @@ label phonenumber:
             Missy "Why don't you update your contact details. I'm going crazy."
 
             Mys "I don't think it's necessary to update this number, I won't use it when I go back."
-            
+
             Missy "This thought is wrong!"
             Missy "You should keep your contact details open at all times."
             Missy "You must also ensure that the university has up-to-date contact information for you on Campus Solutions. "
@@ -1181,10 +1145,7 @@ label phonenumber:
                 xalign 0.8
 
             $showplayer()
-            show kevin:
-                zoom 0.5
-                xalign 1.0 yalign 0.35
-                linear 0.5 xalign 0.7
+            $showkevin()
 
             Missy "Congratulations on successfully completing your studies."
             Missy "At the same time, congratulations on your healthy and safe university experience."
@@ -1214,10 +1175,7 @@ label phonenumber:
             xalign 0.8
 
         $showplayer()
-        show kevin:
-            zoom 0.5
-            xalign 1.0 yalign 0.35
-            linear 0.5 xalign 0.7
+        $showkevin()
 
         Missy "Congratulations on successfully completing your studies."
         Missy "At the same time, congratulations on your healthy and safe university experience."

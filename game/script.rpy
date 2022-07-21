@@ -54,7 +54,8 @@ image player_a  = Composite(
 default IsInputname = False
 define mys = Character("Mys",image="player_a")
 define Missy = Character("Missy",image="missy")
-define Kevin = Character("Kevin")
+define friend="Kevin"
+define Kevin = Character("[friend]")
 define povname = "Messi"
 define Mys = Character("[povname]",image="player_a")
 define Security = Character("Security")
@@ -89,6 +90,16 @@ transform ml:
     zoom 0.5
     xalign 0.0 yalign 0.35
     linear 0.5 xalign 0.1
+
+transform k1:
+    zoom 0.5
+    xalign 1.0 yalign 0.35
+    linear 0.5 xalign 0.7
+
+transform k2:
+    zoom 0.5
+    xalign 0.8 yalign 0.25
+    linear 0.5 xalign 0.3
 
 transform x:
     zoom 0.5
@@ -125,6 +136,15 @@ init:
     default isMale = True
 
 init python:
+    sex11 = 1
+    Color11= 1
+    STyle11 = 1
+    EXpression11 = 0
+    Cos11 = 0
+    Acc11 = 0
+    Haircolor=["Pink","Dark","Brown", "Silver", "Blond"]
+    Haircolor2=["Red","Dark","Brown", "Silver", "Blond"]
+
 
     def showplayercenter():
         if isMale:
@@ -148,6 +168,24 @@ init python:
             renpy.hide("player f")
 
 
+    def showkevin():
+        if sex11==2:
+
+            renpy.show("kevin",at_list=[k2])
+        else:
+            renpy.show("kevin1",at_list=[k1])
+
+    def hidekevin():
+        if sex11==2:
+
+            renpy.hide("kevin")
+        else:
+            renpy.hide("kevin1")
+
+
+
+
+
 # label before_main_menu:
 #     scene purple
 #     show logo2
@@ -158,6 +196,42 @@ init python:
 #
 #     return
 label start:
+    $sex11 = renpy.random.randint(1,2)
+
+
+    $STyle11 = renpy.random.randint(1,5)
+    $EXpression11 = renpy.random.randint(1,5)
+    $Cos11 = renpy.random.randint(1,5)
+    $Acc11 = renpy.random.randint(1,5)
+    "[sex11],[Acc11],[STyle11],[EXpression11],[Cos11],[Acc11],[Color11]"
+    if sex11==2:
+        $friend="Natasha"
+        $Color11= renpy.random.choice(Haircolor)
+        image kevin= Composite(
+            (300, 600),
+            (600, -208), "Create 2/Hair/Style[STyle11]_[Color11].png",
+            (1313, 350), "Create 2/Expressions/Expression[EXpression11].png",
+            (600, -210), "Create 2/Costume/cos[Cos11].png",
+            (600, -220), "Create 2/Accessories/acc[Acc11].png",
+        )
+        "sdsaasdasdas"
+
+    else:
+        $friend="Kevin"
+        $Color11= renpy.random.choice(Haircolor2)
+        image kevin1= Composite(
+                (300, 600),
+                (-90, -208), "Create 1/Hair/Style[STyle11]_[Color11].png",
+                (303, 222), "Create 1/Expressions/Expression[EXpression11].png",
+                (-17, 497), "Create 1/Costume/cos[Cos11].png",
+                (-115, -260), "Create 1/Accessories/acc[Acc11].png",
+
+        )
+
+
+    $showkevin()
+
+    "[sex11],[Acc11],[STyle11],[EXpression11],[Cos11],[Acc11],[Color11]"
 
     # scene white
     # with fade
@@ -224,15 +298,12 @@ label start:
 
 
     # "Your best friend, Kevin, has also been accepted to the University of Cityunited"
-    # show kevin:
-    #     zoom 0.5
-    #     xalign 1.0 yalign 0.35
-    #     linear 0.5 xalign 0.9
+    # $showkevin()
     # "You will spend your time with him at the University of Cityunited!"
     #
     #
     # "On the first day of school, you attended a freshers' meeting with Kevin, where you met Missy, the head of your major."
-    # hide kevin
+    # $hidekevin()
     # scene bg classroom
     # with dissolve
     # show Missy Smile at center:
@@ -320,10 +391,7 @@ label start:
     #
     # hide Missy Normal
     #
-    # show kevin at center:
-    #     zoom 0.5
-    #     xalign 1.0 yalign 0.42
-    #     linear 0.5 xalign 0.7
+    # $showkevin()
     #
     # Kevin "What did supervisor say just now, I was watching TikTok and didn't hear it, hahaha."
     #
@@ -335,7 +403,7 @@ label start:
     #
     # Kevin "It's ok, I think TikTok is more interesting than the supervisor's speech, hahaha."
     #
-    # hide kevin
+    # $hidekevin()
     #
     # $hideplayer()
     #

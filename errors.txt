@@ -2,17 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/chapter1.rpy", line 136: expected menuitem
-    $showplayer()
-    ^
-
-File "game/chapter1.rpy", line 156: expected menuitem
-    $showplayer()
-    ^
-
-File "game/chapter1.rpy", line 852: Line is indented, but the preceding hide statement statement does not expect a block. Please check this line's indentation.
-    jump chapter2
-    ^
+File "game/script.rpy", line 182: invalid syntax
+                (600, -208), "Create 2/Hair/Style[STyle11]_[Haircolor"[Color11]"].png",\
+                                                                                      ^
+    
 
 Ren'Py Version: Ren'Py 7.4.10.2178
-Sun Jul 10 21:38:21 2022
+Wed Jul 20 22:07:57 2022

@@ -48,24 +48,19 @@ label first_chapter:
 #
 #     Mys "hi, Kevin, why have you started smoking?"
 #
-#     show kevin:
-#         zoom 0.5
-#         xalign 1.0 yalign 0.35
-#         linear 0.5 xalign 0.7
+#     $showkevin()
 #
 #     Kevin "I have to hand in assignments recently, so I've been under a lot of stress."
 #     Kevin "My friend told me to smoke if I am stressed, smoking would help me release my stress."
 #     Kevin "I tried it. It's true! Do you want to try it?"
 #
-#     hide kevin
+#     $hidekevin()
 #     $hideplayer()
 #
 #     menu:
 #
 #         "Of course! I want to try it.":
-#             show kevin:
-#                 zoom 0.5
-#                 xalign 0.7 yalign 0.35
+#             $showkevin()
 #
 #             $showplayer()
 #
@@ -75,9 +70,7 @@ label first_chapter:
 #             Mys "There are other ways to release stress."
 #
 #         "No, I don't want to.":
-#             show kevin:
-#                 zoom 0.5
-#                 xalign 0.7 yalign 0.35
+#             $showkevin()
 #
 #             $showplayer()
 #
@@ -266,25 +259,20 @@ label first_chapter:
 #
 #     Mys "Kevin, I really don't think smoking is a good habit."
 #
-#     show kevin:
-#         zoom 0.5
-#         xalign 1.0 yalign 0.35
-#         linear 0.5 xalign 0.7
+#     $showkevin()
 #
 #     Kevin "I'm very enjoying smoking right now, I think you should try it too."
 #
 #     Mys "Oh my God, why did you put your cigarette so close to the curtains again??"
 #     Kevin "Relax, it's just a small cigarette."
 #
-#     hide kevin
+#     $hidekevin()
 #     $hideplayer()
 #
 #     menu:
 #         "Just in case, i should stop him":
 #
-#             show kevin:
-#                 zoom 0.5
-#                 xalign 0.7 yalign 0.35
+#             $showkevin()
 #
 #             $showplayer()
 #
@@ -292,14 +280,12 @@ label first_chapter:
 #             Mys "You should put out the cigarette and throw it in the adjacent bin, which is not far from the curtains."
 #             Kevin "Well, I don't want a fire either. What should I do?"
 #
-#             hide kevin
+#             $hidekevin()
 #             $hideplayer()
 #
 #             menu:
 #                 "Putting out cigarettes with water":
-#                     show kevin:
-#                         zoom 0.5
-#                         xalign 0.7 yalign 0.35
+#                     $showkevin()
 #
 #                     $showplayer()
 #
@@ -308,9 +294,7 @@ label first_chapter:
 #                     jump exercise
 #
 #                 "Check for flammable items when throwing cigarette butts":
-#                     show kevin:
-#                         zoom 0.5
-#                         xalign 0.7 yalign 0.35
+#                     $showkevin()
 #
 #                     $showplayer()
 #
@@ -319,9 +303,7 @@ label first_chapter:
 #                     jump exercise
 #
 #                 "Throw your cigarette butts in the bin":
-#                     show kevin:
-#                         zoom 0.5
-#                         xalign 0.7 yalign 0.35
+#                     $showkevin()
 #
 #                     $showplayer()
 #
@@ -331,9 +313,7 @@ label first_chapter:
 #                     jump fire
 #
 #         "I've warned him, It's better to let him handle it himself.":
-#                 show kevin:
-#                     zoom 0.5
-#                     xalign 0.7 yalign 0.35
+#                 $showkevin()
 #
 #                 $showplayer()
 #
@@ -627,10 +607,7 @@ label first_chapter:
 #
 #     $showplayer()
 #
-#     show kevin:
-#         zoom 0.5
-#         xalign 1.0 yalign 0.35
-#         linear 0.5 xalign 0.7
+#     $showkevin()
 #
 #     Kevin "I'm a bit hungry. My goodness, it's already 12:30!! "
 #     Kevin "[povname] do you want to go and get something to eat?"
@@ -642,9 +619,7 @@ label first_chapter:
 #     $showplayer()
 #
 #
-#     show kevin:
-#         zoom 0.5
-#         xalign 1.0 yalign 0.35
+#     $showkevin()
 #
 #
 #     Kevin "We have to put our phones, wallet and laptops away."
@@ -653,7 +628,7 @@ label first_chapter:
 #
 #     Kevin "I think you should put them away."
 #
-#     hide kevin
+#     $hidekevin()
 #     $hideplayer()
 #
 #     menu:
@@ -662,9 +637,7 @@ label first_chapter:
 #             $showplayer()
 #
 #
-#             show kevin:
-#                 zoom 0.5
-#                 xalign 1.0 yalign 0.35
+#             $showkevin()
 #
 #             Mys "Okay, I'll put them away."
 #             Kevin "Mobile phones, laptops and wallets are easy targets for thieves"
@@ -680,9 +653,7 @@ label first_chapter:
 #             $showplayer()
 #
 #
-#             show kevin:
-#                 zoom 0.5
-#                 xalign 1.0 yalign 0.35
+#             $showkevin()
 #
 #             Mys "The computer has now been put away."
 #             Kevin "This should be fine now."
@@ -700,9 +671,7 @@ label first_chapter:
 #             $showplayer()
 #
 #
-#             show kevin:
-#                 zoom 0.5
-#                 xalign 0.7 yalign 0.35
+#             $showkevin()
 #
 #             Kevin "Have you heard? "
 #             Mys "No, what happend?"
@@ -716,9 +685,7 @@ label first_chapter:
 #             $showplayer()
 #
 #
-#             show kevin:
-#                 zoom 0.5
-#                 xalign 1.0 yalign 0.35
+#             $showkevin()
 #
 #             Mys "It will take 2 minutes to buy a meal."
 #             Mys "However, it will take at least 5 minutes to put things away."
@@ -735,9 +702,7 @@ label first_chapter:
 #
 #             $showplayer()
 #
-#             show kevin:
-#                 zoom 0.5
-#                 xalign 1.0 yalign 0.35
+#             $showkevin()
 #
 #
 #             Mys "Oh my god, where is my stuff? "
@@ -764,9 +729,7 @@ label first_chapter:
 #
 #     $showplayer()
 #
-#     show kevin:
-#         zoom 0.5
-#         xalign 0.7 yalign 0.35
+#     $showkevin()
 #
 #     Kevin "I'm so tired."
 #     Mys "I just found out that you're not in the right position to study."
@@ -817,7 +780,7 @@ label first_chapter:
 #     Kevin "make sure the power cord doesn't drag across the floor so people don't trip and fall."
 #     Kevin "library offers a laptop plug-in area. So we should try to use these whenever possible."
 #
-#     hide kevin
+#     $hidekevin()
 #     $hideplayer()
 #
 #     menu:
@@ -826,9 +789,7 @@ label first_chapter:
 #             $showplayer()
 #
 #
-#             show kevin:
-#                 zoom 0.5
-#                 xalign 0.7 yalign 0.35
+#             $showkevin()
 #
 #             Mys "It's okay, people can see what's on the road."
 #
@@ -844,9 +805,7 @@ label first_chapter:
 #             $showplayer()
 #
 #
-#             show kevin:
-#                 zoom 0.5
-#                 xalign 0.7 yalign 0.35
+#             $showkevin()
 #
 #             Mys "Okay, I'll sort them out. "
 #             "Not long have you finished speaking, than a classmate's bag next to you have tripped over an elderly member of staff,"

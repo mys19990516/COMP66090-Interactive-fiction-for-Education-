@@ -515,10 +515,7 @@ label chapter2:
 #
 #     $showplayer()
 #
-#     show kevin:
-#         zoom 0.5
-#         xalign 1.0 yalign 0.35
-#         linear 0.5 xalign 0.7
+#     $showkevin()
 #
 #     Kevin "So you're back, how was the training today?"
 #     Mys "There are so many situations to be aware of when working."
@@ -532,17 +529,14 @@ label chapter2:
 #     Kevin "I'll try it out and see if it works."
 #
 #     $hideplayer()
-#     hide kevin
+#     $hidekevin()
 #
 #     menu:
 #         "Lend it to Kevin":
 #
 #             $showplayer()
 #
-#             show kevin:
-#                 zoom 0.5
-#                 xalign 1.0 yalign 0.35
-#                 linear 0.5 xalign 0.7
+#             $showkevin()
 #
 #             Mys "I can lend it to you, I would also like to know if the PPE's will work."
 #             Kevin "Thank you so much."
@@ -560,10 +554,7 @@ label chapter2:
 #
 #             $showplayer()
 #
-#             show kevin:
-#                 zoom 0.5
-#                 xalign 1.0 yalign 0.35
-#                 linear 0.5 xalign 0.7
+#             $showkevin()
 #
 #             Mys "I'm very sorry, Missy said they are forbidden in the house because of the risk of damage when using them at home."
 #             Kevin" Well, it's okay, I'll think of another way."
