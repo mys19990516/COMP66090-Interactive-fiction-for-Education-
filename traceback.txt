@@ -1,23 +1,31 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 202, in script
-    show kevin:
-Exception: DynamicImage u'Create 2/Hair/Style[STyle11]_[Color11].png': could not find image. (u'Create 2/Hair/Style5_1.png')
+  File "game/chapter2.rpy", line 520, in script
+    Kevin "So you're back, how was the training today?"
+Exception: DynamicImage u'Create 1/Accessories/acc[Acc11].png': could not find image. (u'Create 1/Accessories/acc0.png')
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 202, in script
-    show kevin:
-  File "renpy/ast.py", line 1197, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "renpy/ast.py", line 1167, in show_imspec
-    atl=atl)
-  File "renpy/exports.py", line 770, in show
-    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
-  File "renpy/display/core.py", line 1147, in add
-    thing.visit_all(lambda d : None)
+  File "game/chapter2.rpy", line 520, in script
+    Kevin "So you're back, how was the training today?"
+  File "renpy/ast.py", line 721, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "renpy/exports.py", line 1417, in say
+    who(what, *args, **kwargs)
+  File "renpy/character.py", line 1249, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "renpy/character.py", line 901, in do_display
+    **display_args)
+  File "renpy/character.py", line 647, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3315, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3735, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
   File "renpy/display/core.py", line 568, in visit_all
     d.visit_all(callback, seen)
   File "renpy/display/core.py", line 568, in visit_all
@@ -26,15 +34,23 @@ Full traceback:
     d.visit_all(callback, seen)
   File "renpy/display/core.py", line 568, in visit_all
     d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 558, in visit_all
-    for d in self.visit():
-  File "renpy/display/image.py", line 744, in visit
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 570, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3735, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/image.py", line 752, in per_interact
     self.find_target()
   File "renpy/display/image.py", line 652, in find_target
     raise Exception(error)
-Exception: DynamicImage u'Create 2/Hair/Style[STyle11]_[Color11].png': could not find image. (u'Create 2/Hair/Style5_1.png')
+Exception: DynamicImage u'Create 1/Accessories/acc[Acc11].png': could not find image. (u'Create 1/Accessories/acc0.png')
 
 Windows-10-10.0.22000
 Ren'Py 7.4.10.2178
 Healthy and Safety 1.0
-Wed Jul 20 22:37:44 2022
+Sat Jul 23 20:53:00 2022

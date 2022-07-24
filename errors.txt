@@ -2,10 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 182: invalid syntax
-                (600, -208), "Create 2/Hair/Style[STyle11]_[Haircolor"[Color11]"].png",\
-                                                                                      ^
-    
+File "game/chapter1.rpy", line 519: indentation mismatch.
 
 Ren'Py Version: Ren'Py 7.4.10.2178
-Wed Jul 20 22:07:57 2022
+Sat Jul 23 20:50:53 2022
