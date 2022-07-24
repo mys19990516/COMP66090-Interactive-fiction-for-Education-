@@ -578,6 +578,8 @@ label successful:
 
         Mys "Finally ran out, I should have called 999 immediately to inform the firefighters. "
         Mys "Then go to the designated area and wait."
+        $showkevin()
+        Kevin "The damage caused by the fire was too great. This result is not satisfactory"
     else:
 
         $showplayer()
@@ -793,7 +795,7 @@ label library2:
 
             Mys "It's okay, people can see what's on the road."
 
-            "However, your bag trip over an elderly member of staff, causing her to land on her head. "
+            "However, your bag trip over an elderly member of cleaning staff, causing her to land on her head. "
             "she is hospitalised and all your family's money go to compensate her. "
             "You have no money to continue with your studies"
             " Finally, you drop out of your University. "
@@ -808,7 +810,7 @@ label library2:
             $showkevin()
 
             Mys "Okay, I'll sort them out. "
-            "Not long have you finished speaking, than a classmate's bag next to you have tripped over an elderly member of staff,"
+            "Not long have you finished speaking, than a classmate's bag next to you have tripped over an elderly member of cleaning staff,"
             "causing her to land on her head and she was admitted to hospital."
             Mys "Gosh, I'm glad I took kevin's advice."
     "In the end, you successfully complete the assignment with a good grade."
