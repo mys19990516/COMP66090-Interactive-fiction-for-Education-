@@ -130,6 +130,7 @@ label chapter3:
             Missy "In placement, -you should be in regular contact with your workplace supervisor."
             Missy "Communicate with your school on a regular basis."
             Missy "You should also establish emergency contact arrangements."
+            Missy "If you change your contact details, please keep them up to date on the University's website so that the University can contact you."
 
             jump question
 
@@ -872,7 +873,7 @@ label placement:
             Missy "This is your last exchange student program."
             Missy "You will be banned from future activities."
             Mys "Don't..."
-            Missy "Also you will be fined £5,000 by the local police!"
+            Missy "Also you will be fined £5,00 by the local police!"
             Missy "It's your choice."
             "......"
 

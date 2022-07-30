@@ -94,12 +94,12 @@ transform ml:
 transform k1:
     zoom 0.5
     xalign 1.0 yalign 0.35
-    linear 0.5 xalign 0.7
+    linear 0.5 xalign 0.6
 
 transform k2:
     zoom 0.5
     xalign 0.8 yalign 0.25
-    linear 0.5 xalign 0.3
+    linear 0.5 xalign 0.25
 
 transform x:
     zoom 0.5
@@ -186,15 +186,15 @@ init python:
 
 
 
-# label before_main_menu:
-#     scene purple
-#     show logo2
-#     with dissolve
-#     $ renpy.pause(2.0, hard=True)
-#     hide logo2
-#     with dissolve
-#
-#     return
+label before_main_menu:
+    scene purple
+    show logo2
+    with dissolve
+    $ renpy.pause(2.0, hard=True)
+    hide logo2
+    with dissolve
+
+    return
 label start:
     $sex11 = renpy.random.randint(1,2)
 
@@ -214,7 +214,7 @@ label start:
             (600, -210), "Create 2/Costume/cos[Cos11].png",
             (600, -220), "Create 2/Accessories/acc[Acc11].png",
         )
-        "sdsaasdasdas"
+
 
     else:
         $friend="Kevin"

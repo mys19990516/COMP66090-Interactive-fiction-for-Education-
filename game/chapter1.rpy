@@ -578,8 +578,14 @@ label successful:
 
         Mys "Finally ran out, I should have called 999 immediately to inform the firefighters. "
         Mys "Then go to the designated area and wait."
-        $showkevin()
-        Kevin "The damage caused by the fire was too great. This result is not satisfactory"
+        show Missy Sad at center:
+             xalign 1.0
+             linear 0.5 xalign 0.7
+        Missy "The fire caused a lot of damage."
+        Missy "This should never have happened."
+        Mys "I am sorry about that. I should stop [friend]."
+        Mys "But I still want to thank you, your knowledge was really helpful, thanks Missy."
+        Mys "I have to learn seriously about health and safety."
     else:
 
         $showplayer()
@@ -587,9 +593,10 @@ label successful:
         Mys " Finally ran out, so this was a drill. "
         Mys "The smoke was released in advance by the staff to simulate a real fire."
         Mys "Now I should go and wait in the designated area."
+        Mys "Missy's knowledge was really helpful, thanks Missy."
+        Mys "I have to learn seriously about health and safety."
 
-    Mys "Missy's knowledge was really helpful, thanks Missy."
-    Mys "I have to learn seriously about health and safety."
+
 
 label library:
     scene white
