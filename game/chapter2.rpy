@@ -385,7 +385,7 @@ label MechanicalLab:
         show Missy Normal at center:
             xalign 0.7
 
-    Missy "In a mechanical laboratory, you should avoid hurting the machine, rr avoid the machine hurting you."
+    Missy "In a mechanical laboratory, you should avoid hurting the machine, or avoid the machine hurting you."
 
     Missy "If used incorrectly, the machine or equipment may cause you injury by touching or entangling any moving parts;"
     Missy "crushed between moving parts and fixed structures -for example -wall;"
@@ -582,7 +582,7 @@ label Day2:
     $hideplayer()
     menu:
 
-        "wear loose clothing":
+        "Wear loose clothing":
 
             $showplayer()
 
