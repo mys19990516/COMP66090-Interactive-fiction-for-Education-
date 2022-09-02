@@ -147,7 +147,7 @@ label chapter3:
             Kevin "[povname], I have some question about these."
             Kevin "Can you help me?"
             Mys "Sure!"
-            Missy "I am also here for you, Kevin. To prevent [povname] from giving you wrong answers."
+            Missy "I am also here for you, [friend]. To prevent [povname] from giving you wrong answers."
 
 
 
@@ -744,7 +744,7 @@ label result:
 
 
 label placement:
-    "Kevin finally changed the placement location because he want to accompany you."
+    "[friend] finally changed the placement location because he want to accompany you."
     "You ended up at the Von Neumann University (the best computer university) with [friend], to study computing as interactive students."
 
     scene white
@@ -1085,7 +1085,7 @@ label phonenumber:
             $showplayer()
             Mys "Who's there?"
 
-            Kevin "I am Kevin."
+            Kevin "I am [friend]."
 
             $showkevin()
             Mys "I'm so sleepy, it's 2am. What's going on."
@@ -1116,7 +1116,7 @@ label phonenumber:
             Missy "You must also ensure that the university has up-to-date contact information for you on Campus Solutions. "
             Missy "You should also ensure that you check your email regularly while away from the University."
             Mys "I understand, missy, and I'm very sorry"
-            Missy "Kevin told you, didn't he?"
+            Missy "[friend] told you, didn't he?"
 
             Mys "I've got it. I'll go back tomorrow."
 

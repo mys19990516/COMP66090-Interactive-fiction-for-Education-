@@ -293,12 +293,12 @@ label start:
             "No worries. We created the character for you"
 
 
-    "Your best friend, Kevin, has also been accepted to the University of Cityunited"
+    "Your best friend, [friend], has also been accepted to the University of Cityunited"
     $showkevin()
     "You will spend your time with him at the University of Cityunited!"
 
 
-    "On the first day of school, you attended a freshers' meeting with Kevin, where you met Missy, the head of your major."
+    "On the first day of school, you attended a freshers' meeting with [friend], where you met Missy, the head of your major."
     $hidekevin()
     scene bg classroom
     with dissolve

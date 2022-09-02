@@ -532,7 +532,7 @@ label Evening:
     $hidekevin()
 
     menu:
-        "Lend it to Kevin":
+        "Lend it to [friend]":
 
             $showplayer()
 
@@ -550,7 +550,7 @@ label Evening:
 
             $lentKevin=True
 
-        "Don't want to lend to Kevin":
+        "Don't want to lend to [friend]":
 
             $showplayer()
 

@@ -23,10 +23,10 @@ label first_chapter:
     show text "After a month, you have fully adjusted to university life."
     pause
 
-    show text "You and Kevin live together. You often study, go shopping together. Life is very comfortable and happy."
+    show text "You and [friend] live together. You often study, go shopping together. Life is very comfortable and happy."
     pause
 
-    show text "However, you have recently noticed that Kevin has picked up the habit of smoking."
+    show text "However, you have recently noticed that [friend] has picked up the habit of smoking."
     pause
 
     "On a weekend"
@@ -42,11 +42,11 @@ label first_chapter:
     scene bg kitchen2
     with dissolve
 
-    "When you enter the kitchen, you smell smoke. Then you notice Kevin is smoking."
+    "When you enter the kitchen, you smell smoke. Then you notice [friend] is smoking."
 
     $showplayer()
 
-    Mys "hi, Kevin, why have you started smoking?"
+    Mys "hi, [friend], why have you started smoking?"
 
     $showkevin()
 
@@ -79,7 +79,7 @@ label first_chapter:
 
     Kevin "It's okay. We're in perfect health."
 
-    "At this time, Kevin finishs smoking."
+    "At this time, [friend] finishs smoking."
     "He drops the unextinguished butt next to the window, which is close to the curtain."
     "It makes you worried."
 
@@ -92,7 +92,7 @@ label first_chapter:
     Mys "But...."
     Kevin "All right, I'm gonna do my homework."
 
-    "You think Kevin is wrong and decide to ask Missy"
+    "You think [friend] is wrong and decide to ask Missy"
     jump askMissy
 
 label askMissy:
@@ -107,7 +107,7 @@ label askMissy:
 
     $showplayer()
 
-    Mys "hi, Missy, my friend Kevin often throws cigarette butts very close to the curtains."
+    Mys "hi, Missy, my friend [friend] often throws cigarette butts very close to the curtains."
     Mys "I think it could start a fire, which is very dangerous."
 
     $hideplayer()
@@ -123,19 +123,19 @@ label askMissy:
     Missy "The causes of university fires are broadly: unattended cooking"
     Missy "candles left unattended or placed next to combustible material, carelessly discarded cigarettes, "
     Missy "heat sources next to curtains, experiments left unattended."
-    Missy "Do you think Kevin's behavior is among these dangerous behaviors?"
+    Missy "Do you think [friend]'s behavior is among these dangerous behaviors?"
 
     menu:
 
         "I think it belongs to them.":
             $showplayer()
 
-            Mys "Kevin's behavior is among them. It may casue fire."
+            Mys "[friend]'s behavior is among them. It may casue fire."
 
         "I don't think so.":
             $showplayer()
 
-            Mys "Kevin's behavior is not among these dangerous behaviors "
+            Mys "[friend]'s behavior is not among these dangerous behaviors "
             Missy "Your are wrong, it definitely belongs to them."
 
 
@@ -253,11 +253,11 @@ label CouldAgain:
     scene bg kitchen
     with dissolve
 
-    "A few days later, you find Kevin smoking in the kitchen again. He still puts the cigarette close to the curtain"
+    "A few days later, you find [friend] smoking in the kitchen again. He still puts the cigarette close to the curtain"
 
     $showplayer()
 
-    Mys "Kevin, I really don't think smoking is a good habit."
+    Mys "[friend], I really don't think smoking is a good habit."
 
     $showkevin()
 
@@ -605,7 +605,7 @@ label library:
     show text "After a couple of weeks, the deadline for the assignment is approaching."
     pause
 
-    show text "You and Kevin decide to go to the library to study."
+    show text "You and [friend] decide to go to the library to study."
     pause
 
     scene bg library
